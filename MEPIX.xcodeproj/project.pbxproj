@@ -90,6 +90,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3067ECB9255AF78F0015583C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3067ECB62559DAB80015583C /*  OnboardingController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3067ECBA255AF7AE0015583C /* Storybord */ = {
+			isa = PBXGroup;
+			children = (
+				30A034DC23FFBBC5005C5AA9 /* Main.storyboard */,
+			);
+			path = Storybord;
+			sourceTree = "<group>";
+		};
 		30A034CA23FFBBC4005C5AA9 = {
 			isa = PBXGroup;
 			children = (
@@ -115,10 +131,10 @@
 		30A034D523FFBBC4005C5AA9 /* MEPIX */ = {
 			isa = PBXGroup;
 			children = (
-				30A034D623FFBBC4005C5AA9 /* AppDelegate.swift */,
+				3067ECB9255AF78F0015583C /* View */,
+				3067ECBA255AF7AE0015583C /* Storybord */,
 				30A034D823FFBBC4005C5AA9 /* SceneDelegate.swift */,
-				30A034DC23FFBBC5005C5AA9 /* Main.storyboard */,
-				3067ECB62559DAB80015583C /*  OnboardingController.swift */,
+				30A034D623FFBBC4005C5AA9 /* AppDelegate.swift */,
 				30A034DF23FFBBC5005C5AA9 /* Assets.xcassets */,
 				30A034E123FFBBC5005C5AA9 /* LaunchScreen.storyboard */,
 				30A034E423FFBBC5005C5AA9 /* Info.plist */,
