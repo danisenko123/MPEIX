@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3054ACCE24449D2000648597 /* Roboto Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3054ACCD24449D2000648597 /* Roboto Light.ttf */; };
-		3067ECB72559DAB80015583C /*  .swift in Sources */ = {isa = PBXBuildFile; fileRef = 3067ECB62559DAB80015583C /*  .swift */; };
+		3067ECB72559DAB80015583C /*  OnboardingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3067ECB62559DAB80015583C /*  OnboardingController.swift */; };
 		30A034D723FFBBC4005C5AA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A034D623FFBBC4005C5AA9 /* AppDelegate.swift */; };
 		30A034D923FFBBC5005C5AA9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A034D823FFBBC4005C5AA9 /* SceneDelegate.swift */; };
 		30A034DE23FFBBC5005C5AA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30A034DC23FFBBC5005C5AA9 /* Main.storyboard */; };
@@ -42,7 +42,7 @@
 /* Begin PBXFileReference section */
 		055AE819B791BD1AFD805274 /* Pods-MEPIX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MEPIX.release.xcconfig"; path = "Pods/Target Support Files/Pods-MEPIX/Pods-MEPIX.release.xcconfig"; sourceTree = "<group>"; };
 		3054ACCD24449D2000648597 /* Roboto Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto Light.ttf"; sourceTree = "<group>"; };
-		3067ECB62559DAB80015583C /*  .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " .swift"; sourceTree = "<group>"; };
+		3067ECB62559DAB80015583C /*  OnboardingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " OnboardingController.swift"; sourceTree = "<group>"; };
 		308CAD32240D5B8700BC7098 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		30A034D323FFBBC4005C5AA9 /* MPEIX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MPEIX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30A034D623FFBBC4005C5AA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -118,7 +118,7 @@
 				30A034D623FFBBC4005C5AA9 /* AppDelegate.swift */,
 				30A034D823FFBBC4005C5AA9 /* SceneDelegate.swift */,
 				30A034DC23FFBBC5005C5AA9 /* Main.storyboard */,
-				3067ECB62559DAB80015583C /*  .swift */,
+				3067ECB62559DAB80015583C /*  OnboardingController.swift */,
 				30A034DF23FFBBC5005C5AA9 /* Assets.xcassets */,
 				30A034E123FFBBC5005C5AA9 /* LaunchScreen.storyboard */,
 				30A034E423FFBBC5005C5AA9 /* Info.plist */,
@@ -367,7 +367,7 @@
 			files = (
 				30A034D723FFBBC4005C5AA9 /* AppDelegate.swift in Sources */,
 				30A034D923FFBBC5005C5AA9 /* SceneDelegate.swift in Sources */,
-				3067ECB72559DAB80015583C /*  .swift in Sources */,
+				3067ECB72559DAB80015583C /*  OnboardingController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
