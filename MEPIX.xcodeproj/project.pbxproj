@@ -8,14 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		3054ACCE24449D2000648597 /* Roboto Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3054ACCD24449D2000648597 /* Roboto Light.ttf */; };
+		3067ECB72559DAB80015583C /* OnboardingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3067ECB62559DAB80015583C /* OnboardingController.swift */; };
 		30A034D723FFBBC4005C5AA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A034D623FFBBC4005C5AA9 /* AppDelegate.swift */; };
 		30A034D923FFBBC5005C5AA9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A034D823FFBBC4005C5AA9 /* SceneDelegate.swift */; };
-		30A034DB23FFBBC5005C5AA9 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A034DA23FFBBC5005C5AA9 /* InfoViewController.swift */; };
 		30A034DE23FFBBC5005C5AA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30A034DC23FFBBC5005C5AA9 /* Main.storyboard */; };
 		30A034E023FFBBC5005C5AA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30A034DF23FFBBC5005C5AA9 /* Assets.xcassets */; };
 		30A034E323FFBBC5005C5AA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30A034E123FFBBC5005C5AA9 /* LaunchScreen.storyboard */; };
-		30A34ACD241EC1A70094AC8E /* BarsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A34ACC241EC1A70094AC8E /* BarsViewController.swift */; };
-		30A4DB90240F094B00FC1544 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A4DB8F240F094B00FC1544 /* MapViewController.swift */; };
 		30B19F7F240DA3CA00BD1F97 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 30B19F7D240DA3CA00BD1F97 /* Info.plist */; };
 		30B19F84240DA3DB00BD1F97 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 30B19F82240DA3DB00BD1F97 /* Info.plist */; };
 		30B7766D240E6810007BA2F1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 30B7766C240E6810007BA2F1 /* GoogleService-Info.plist */; };
@@ -44,19 +42,17 @@
 /* Begin PBXFileReference section */
 		055AE819B791BD1AFD805274 /* Pods-MEPIX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MEPIX.release.xcconfig"; path = "Pods/Target Support Files/Pods-MEPIX/Pods-MEPIX.release.xcconfig"; sourceTree = "<group>"; };
 		3054ACCD24449D2000648597 /* Roboto Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto Light.ttf"; sourceTree = "<group>"; };
+		3067ECB62559DAB80015583C /* OnboardingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingController.swift; sourceTree = "<group>"; };
 		308CAD32240D5B8700BC7098 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		30A034D323FFBBC4005C5AA9 /* MPEIX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MPEIX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30A034D623FFBBC4005C5AA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30A034D823FFBBC4005C5AA9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		30A034DA23FFBBC5005C5AA9 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		30A034DD23FFBBC5005C5AA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		30A034DF23FFBBC5005C5AA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30A034E223FFBBC5005C5AA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		30A034E423FFBBC5005C5AA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30A034E923FFBBC5005C5AA9 /* MEPIXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MEPIXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		30A034F423FFBBC6005C5AA9 /* MEPIXUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MEPIXUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		30A34ACC241EC1A70094AC8E /* BarsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarsViewController.swift; sourceTree = "<group>"; };
-		30A4DB8F240F094B00FC1544 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		30B19F7C240DA3CA00BD1F97 /* MEPIXUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MEPIXUITests.swift; sourceTree = "<group>"; };
 		30B19F7D240DA3CA00BD1F97 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30B19F81240DA3DB00BD1F97 /* MEPIXTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MEPIXTests.swift; sourceTree = "<group>"; };
@@ -121,10 +117,8 @@
 			children = (
 				30A034D623FFBBC4005C5AA9 /* AppDelegate.swift */,
 				30A034D823FFBBC4005C5AA9 /* SceneDelegate.swift */,
-				30A034DA23FFBBC5005C5AA9 /* InfoViewController.swift */,
-				30A34ACC241EC1A70094AC8E /* BarsViewController.swift */,
-				30A4DB8F240F094B00FC1544 /* MapViewController.swift */,
 				30A034DC23FFBBC5005C5AA9 /* Main.storyboard */,
+				3067ECB62559DAB80015583C /* OnboardingController.swift */,
 				30A034DF23FFBBC5005C5AA9 /* Assets.xcassets */,
 				30A034E123FFBBC5005C5AA9 /* LaunchScreen.storyboard */,
 				30A034E423FFBBC5005C5AA9 /* Info.plist */,
@@ -371,11 +365,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30A034DB23FFBBC5005C5AA9 /* InfoViewController.swift in Sources */,
 				30A034D723FFBBC4005C5AA9 /* AppDelegate.swift in Sources */,
 				30A034D923FFBBC5005C5AA9 /* SceneDelegate.swift in Sources */,
-				30A34ACD241EC1A70094AC8E /* BarsViewController.swift in Sources */,
-				30A4DB90240F094B00FC1544 /* MapViewController.swift in Sources */,
+				3067ECB72559DAB80015583C /* OnboardingController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
