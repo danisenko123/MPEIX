@@ -8,12 +8,26 @@
 
 import UIKit
 
-class OnboardingController: UIViewController {
+class OnboardingController: UIViewController, UIScrollViewDelegate {
 
+    @IBOutlet weak var ScrollView: UIScrollView!
+    @IBOutlet weak var panageControl: UIPageControl!
+    @IBOutlet weak var GetStartButton: UIButton!
+    
+    var scrollWidth: CGFloat! = 0.0
+    var scrollHeight: CGFloat! = 0.0
+    
+    
+    var titles = []
+    
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+     
     }
     
           

@@ -131,12 +131,12 @@
 		30A034D523FFBBC4005C5AA9 /* MEPIX */ = {
 			isa = PBXGroup;
 			children = (
-				3067ECB9255AF78F0015583C /* View */,
-				3067ECBA255AF7AE0015583C /* Storybord */,
 				30A034D823FFBBC4005C5AA9 /* SceneDelegate.swift */,
 				30A034D623FFBBC4005C5AA9 /* AppDelegate.swift */,
-				30A034DF23FFBBC5005C5AA9 /* Assets.xcassets */,
+				3067ECB9255AF78F0015583C /* View */,
+				3067ECBA255AF7AE0015583C /* Storybord */,
 				30A034E123FFBBC5005C5AA9 /* LaunchScreen.storyboard */,
+				30A034DF23FFBBC5005C5AA9 /* Assets.xcassets */,
 				30A034E423FFBBC5005C5AA9 /* Info.plist */,
 				308CAD32240D5B8700BC7098 /* Roboto-Regular.ttf */,
 				3054ACCD24449D2000648597 /* Roboto Light.ttf */,
