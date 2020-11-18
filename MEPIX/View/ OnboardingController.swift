@@ -18,7 +18,10 @@ class OnboardingController: UIViewController, UIScrollViewDelegate {
     var scrollHeight: CGFloat! = 0.0
     
     
-    var titles = []
+    var titles = [""]
+    
+    
+       
     
     
     
