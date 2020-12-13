@@ -6,7 +6,7 @@ target 'MEPIX' do
   use_frameworks!
 
   pod 'Firebase/Analytics'
-  pod 'GoogleMaps'
+  
 
   
 end

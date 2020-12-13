@@ -14,11 +14,13 @@
 		30A034DE23FFBBC5005C5AA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30A034DC23FFBBC5005C5AA9 /* Main.storyboard */; };
 		30A034E023FFBBC5005C5AA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30A034DF23FFBBC5005C5AA9 /* Assets.xcassets */; };
 		30A034E323FFBBC5005C5AA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30A034E123FFBBC5005C5AA9 /* LaunchScreen.storyboard */; };
+		30AC31F2256BF18E00EF8475 /* GroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AC31F1256BF18E00EF8475 /* GroupViewController.swift */; };
 		30B19F7F240DA3CA00BD1F97 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 30B19F7D240DA3CA00BD1F97 /* Info.plist */; };
 		30B19F84240DA3DB00BD1F97 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 30B19F82240DA3DB00BD1F97 /* Info.plist */; };
 		30B7766D240E6810007BA2F1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 30B7766C240E6810007BA2F1 /* GoogleService-Info.plist */; };
 		30BF3BB3240E729100A7B2C6 /* MEPIXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B19F81240DA3DB00BD1F97 /* MEPIXTests.swift */; };
 		30BF3BB4240E72A200A7B2C6 /* MEPIXUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B19F7C240DA3CA00BD1F97 /* MEPIXUITests.swift */; };
+		30CBBCE3257BCCC2008E568B /* Rasspisanie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CBBCE2257BCCC2008E568B /* Rasspisanie.swift */; };
 		382869E4FDE7DFF84C9EFFA3 /* Pods_MEPIX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9569C5C004C910D8E1B37968 /* Pods_MEPIX.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,11 +55,13 @@
 		30A034E423FFBBC5005C5AA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30A034E923FFBBC5005C5AA9 /* MEPIXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MEPIXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		30A034F423FFBBC6005C5AA9 /* MEPIXUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MEPIXUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		30AC31F1256BF18E00EF8475 /* GroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupViewController.swift; sourceTree = "<group>"; };
 		30B19F7C240DA3CA00BD1F97 /* MEPIXUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MEPIXUITests.swift; sourceTree = "<group>"; };
 		30B19F7D240DA3CA00BD1F97 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30B19F81240DA3DB00BD1F97 /* MEPIXTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MEPIXTests.swift; sourceTree = "<group>"; };
 		30B19F82240DA3DB00BD1F97 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30B7766C240E6810007BA2F1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		30CBBCE2257BCCC2008E568B /* Rasspisanie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rasspisanie.swift; sourceTree = "<group>"; };
 		9569C5C004C910D8E1B37968 /* Pods_MEPIX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MEPIX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB1C67D0D5CF56942C439299 /* Pods_MEPIX_MEPIXUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MEPIX_MEPIXUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0CA21C02FCB9354BD417FE9 /* Pods_MEPIXTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MEPIXTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				3067ECB62559DAB80015583C /*  OnboardingController.swift */,
+				30AC31F1256BF18E00EF8475 /* GroupViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -131,10 +136,11 @@
 		30A034D523FFBBC4005C5AA9 /* MEPIX */ = {
 			isa = PBXGroup;
 			children = (
+				30CBBCE1257BC789008E568B /* JsonModel */,
+				3067ECBA255AF7AE0015583C /* Storybord */,
+				3067ECB9255AF78F0015583C /* View */,
 				30A034D823FFBBC4005C5AA9 /* SceneDelegate.swift */,
 				30A034D623FFBBC4005C5AA9 /* AppDelegate.swift */,
-				3067ECB9255AF78F0015583C /* View */,
-				3067ECBA255AF7AE0015583C /* Storybord */,
 				30A034E123FFBBC5005C5AA9 /* LaunchScreen.storyboard */,
 				30A034DF23FFBBC5005C5AA9 /* Assets.xcassets */,
 				30A034E423FFBBC5005C5AA9 /* Info.plist */,
@@ -162,6 +168,14 @@
 			);
 			path = MEPIXTests;
 			sourceTree = SOURCE_ROOT;
+		};
+		30CBBCE1257BC789008E568B /* JsonModel */ = {
+			isa = PBXGroup;
+			children = (
+				30CBBCE2257BCCC2008E568B /* Rasspisanie.swift */,
+			);
+			path = JsonModel;
+			sourceTree = "<group>";
 		};
 		742E3E37E943D56A07F1BE88 /* Pods */ = {
 			isa = PBXGroup;
@@ -194,7 +208,6 @@
 				30A034D023FFBBC4005C5AA9 /* Frameworks */,
 				30A034D123FFBBC4005C5AA9 /* Resources */,
 				2FC7E6B987DA9F159F7D10CE /* [CP] Embed Pods Frameworks */,
-				7EBB589F7323CDA94E4B24C5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -338,24 +351,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MEPIX/Pods-MEPIX-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7EBB589F7323CDA94E4B24C5 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-MEPIX/Pods-MEPIX-resources.sh",
-				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MEPIX/Pods-MEPIX-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		96815EFA1C106E1CD220CF38 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -383,7 +378,9 @@
 			files = (
 				30A034D723FFBBC4005C5AA9 /* AppDelegate.swift in Sources */,
 				30A034D923FFBBC5005C5AA9 /* SceneDelegate.swift in Sources */,
+				30AC31F2256BF18E00EF8475 /* GroupViewController.swift in Sources */,
 				3067ECB72559DAB80015583C /*  OnboardingController.swift in Sources */,
+				30CBBCE3257BCCC2008E568B /* Rasspisanie.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -559,14 +556,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 8822W2CGS3;
 				INFOPLIST_FILE = MEPIX/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ru.mpei.mpeiapp;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mpei.mpeiapp;
 				PRODUCT_NAME = MPEIX;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
@@ -581,14 +579,15 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 8822W2CGS3;
 				INFOPLIST_FILE = MEPIX/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = ru.mpei.mpeiapp;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mpei.mpeiapp;
 				PRODUCT_NAME = MPEIX;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
