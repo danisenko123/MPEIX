@@ -19,6 +19,13 @@ class GroupViewController: UIViewController {
 
     @IBAction func ButtonViewRass(_ sender: Any) {
         
+        //условие проверки группы и подгрузка расписания с бэкенда
+        
+        //if let group =  {
+            
+     //   }else {}
+        
+        
     }
     
 }
