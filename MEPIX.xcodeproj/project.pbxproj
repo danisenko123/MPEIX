@@ -10,6 +10,7 @@
 		301E85D725949E4100C1D7E3 /* RaspisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301E85D625949E4100C1D7E3 /* RaspisViewController.swift */; };
 		3054ACCE24449D2000648597 /* Roboto Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3054ACCD24449D2000648597 /* Roboto Light.ttf */; };
 		3067ECB72559DAB80015583C /*  OnboardingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3067ECB62559DAB80015583C /*  OnboardingController.swift */; };
+		30692E1125A613EB00A8FAED /* MAP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30692E1025A613EB00A8FAED /* MAP.swift */; };
 		30A034D723FFBBC4005C5AA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A034D623FFBBC4005C5AA9 /* AppDelegate.swift */; };
 		30A034D923FFBBC5005C5AA9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A034D823FFBBC4005C5AA9 /* SceneDelegate.swift */; };
 		30A034DE23FFBBC5005C5AA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30A034DC23FFBBC5005C5AA9 /* Main.storyboard */; };
@@ -47,6 +48,7 @@
 		301E85D625949E4100C1D7E3 /* RaspisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaspisViewController.swift; sourceTree = "<group>"; };
 		3054ACCD24449D2000648597 /* Roboto Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto Light.ttf"; sourceTree = "<group>"; };
 		3067ECB62559DAB80015583C /*  OnboardingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " OnboardingController.swift"; sourceTree = "<group>"; };
+		30692E1025A613EB00A8FAED /* MAP.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MAP.swift; sourceTree = "<group>"; };
 		308CAD32240D5B8700BC7098 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		30A034D323FFBBC4005C5AA9 /* MPEIX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MPEIX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30A034D623FFBBC4005C5AA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -176,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				30CBBCE2257BCCC2008E568B /* Rasspisanie.swift */,
+				30692E1025A613EB00A8FAED /* MAP.swift */,
 			);
 			path = JsonModel;
 			sourceTree = "<group>";
@@ -383,6 +386,7 @@
 				30A034D923FFBBC5005C5AA9 /* SceneDelegate.swift in Sources */,
 				301E85D725949E4100C1D7E3 /* RaspisViewController.swift in Sources */,
 				30AC31F2256BF18E00EF8475 /* GroupViewController.swift in Sources */,
+				30692E1125A613EB00A8FAED /* MAP.swift in Sources */,
 				3067ECB72559DAB80015583C /*  OnboardingController.swift in Sources */,
 				30CBBCE3257BCCC2008E568B /* Rasspisanie.swift in Sources */,
 			);
