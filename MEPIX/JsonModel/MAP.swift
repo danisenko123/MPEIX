@@ -8,7 +8,7 @@
 
 import Foundation
 
-class markers {
+struct markers {
     var uid: String
     var address: String
     var lat: Double

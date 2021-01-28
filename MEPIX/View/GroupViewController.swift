@@ -7,13 +7,16 @@
 //
 
 import UIKit
+import RealmSwift
+
+
 
 class GroupViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
-        // Do any additional setup after loading the view.
     }
     
 
@@ -24,6 +27,7 @@ class GroupViewController: UIViewController {
         //if let group =  {
             
      //   }else {}
+     
         
         
     }

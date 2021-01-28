@@ -10,12 +10,15 @@ import UIKit
 
 class RaspisViewController: UIViewController {
 
+    
+    @IBOutlet weak var GoupTabview: UITableView!
+    
+    var arrey: [Weeks] = []
+    var erorrDownload: String = ""
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-
     }
-    
-
 
 }

@@ -12,19 +12,19 @@ import Foundation
 struct Raspisanie: Decodable{
     var groupNumber: String
     var groupId: String
-    var weeks: [Weeks]
+    var weeks: [Weeks?]
 }
 
 struct Weeks: Decodable {
     var weekOfYear: Int
     var weekOfSemester: Int
-    var days: [Day]
+    var days: [Day?]
 }
 
 struct Day: Decodable{
     var dayOfWeek: Int
     var date: String
-    var classes: [Class]
+    var classes: [Class?]
 }
 
 struct Class: Decodable {
