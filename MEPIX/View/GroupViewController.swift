@@ -7,12 +7,14 @@
 //
 
 import UIKit
-import RealmSwift
+
 
 
 
 class GroupViewController: UIViewController {
 
+    @IBOutlet weak var GroupTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
