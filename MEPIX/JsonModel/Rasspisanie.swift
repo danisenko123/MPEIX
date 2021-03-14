@@ -22,12 +22,19 @@ struct Weeks: Decodable {
 }
 struct Days: Decodable {
     var dayOfWeek: Int
-    var date
+    var date: String
     var classes:[Classes?]
 }
 
 struct Classes: Decodable {
-    
+    var name: String
+    var rawType: String
+    var place: String
+    var groups: String
+    var person: String
+    var number: Int
+    var start: String
+    var end: String
 }
 
 

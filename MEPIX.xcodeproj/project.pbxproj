@@ -22,6 +22,8 @@
 		30BF3BB3240E729100A7B2C6 /* MEPIXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B19F81240DA3DB00BD1F97 /* MEPIXTests.swift */; };
 		30BF3BB4240E72A200A7B2C6 /* MEPIXUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B19F7C240DA3CA00BD1F97 /* MEPIXUITests.swift */; };
 		30CBBCE3257BCCC2008E568B /* Rasspisanie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CBBCE2257BCCC2008E568B /* Rasspisanie.swift */; };
+		30FD041B25FD131100392AD3 /* DateRaspis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FD041925FD131100392AD3 /* DateRaspis.swift */; };
+		30FD041C25FD131100392AD3 /* DateRaspis.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30FD041A25FD131100392AD3 /* DateRaspis.xib */; };
 		382869E4FDE7DFF84C9EFFA3 /* Pods_MEPIX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9569C5C004C910D8E1B37968 /* Pods_MEPIX.framework */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +66,8 @@
 		30B19F82240DA3DB00BD1F97 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30B7766C240E6810007BA2F1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		30CBBCE2257BCCC2008E568B /* Rasspisanie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rasspisanie.swift; sourceTree = "<group>"; };
+		30FD041925FD131100392AD3 /* DateRaspis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateRaspis.swift; sourceTree = "<group>"; };
+		30FD041A25FD131100392AD3 /* DateRaspis.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DateRaspis.xib; sourceTree = "<group>"; };
 		9569C5C004C910D8E1B37968 /* Pods_MEPIX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MEPIX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB1C67D0D5CF56942C439299 /* Pods_MEPIX_MEPIXUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MEPIX_MEPIXUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0CA21C02FCB9354BD417FE9 /* Pods_MEPIXTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MEPIXTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -106,6 +110,8 @@
 		3061BE9B25E6B56B00BD74FB /* Collectionview */ = {
 			isa = PBXGroup;
 			children = (
+				30FD041925FD131100392AD3 /* DateRaspis.swift */,
+				30FD041A25FD131100392AD3 /* DateRaspis.xib */,
 			);
 			path = Collectionview;
 			sourceTree = "<group>";
@@ -118,14 +124,6 @@
 				301E85D625949E4100C1D7E3 /* RaspisViewController.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		3067ECBA255AF7AE0015583C /* Storybord */ = {
-			isa = PBXGroup;
-			children = (
-				30A034DC23FFBBC5005C5AA9 /* Main.storyboard */,
-			);
-			path = Storybord;
 			sourceTree = "<group>";
 		};
 		30A034CA23FFBBC4005C5AA9 = {
@@ -153,13 +151,13 @@
 		30A034D523FFBBC4005C5AA9 /* MEPIX */ = {
 			isa = PBXGroup;
 			children = (
-				3061BE9B25E6B56B00BD74FB /* Collectionview */,
 				30A034D623FFBBC4005C5AA9 /* AppDelegate.swift */,
 				30A034D823FFBBC4005C5AA9 /* SceneDelegate.swift */,
+				30A034DC23FFBBC5005C5AA9 /* Main.storyboard */,
 				30A034E123FFBBC5005C5AA9 /* LaunchScreen.storyboard */,
+				3061BE9B25E6B56B00BD74FB /* Collectionview */,
 				305C0FFD25BAC15D00CDD56D /* Pars */,
 				30CBBCE1257BC789008E568B /* JsonModel */,
-				3067ECBA255AF7AE0015583C /* Storybord */,
 				3067ECB9255AF78F0015583C /* View */,
 				30A034DF23FFBBC5005C5AA9 /* Assets.xcassets */,
 				30A034E423FFBBC5005C5AA9 /* Info.plist */,
@@ -323,6 +321,7 @@
 			files = (
 				30A034E323FFBBC5005C5AA9 /* LaunchScreen.storyboard in Resources */,
 				30A034E023FFBBC5005C5AA9 /* Assets.xcassets in Resources */,
+				30FD041C25FD131100392AD3 /* DateRaspis.xib in Resources */,
 				30B19F7F240DA3CA00BD1F97 /* Info.plist in Resources */,
 				30A034DE23FFBBC5005C5AA9 /* Main.storyboard in Resources */,
 				30B7766D240E6810007BA2F1 /* GoogleService-Info.plist in Resources */,
@@ -403,6 +402,7 @@
 				30A034D923FFBBC5005C5AA9 /* SceneDelegate.swift in Sources */,
 				301E85D725949E4100C1D7E3 /* RaspisViewController.swift in Sources */,
 				30AC31F2256BF18E00EF8475 /* GroupViewController.swift in Sources */,
+				30FD041B25FD131100392AD3 /* DateRaspis.swift in Sources */,
 				3067ECB72559DAB80015583C /*  OnboardingController.swift in Sources */,
 				30CBBCE3257BCCC2008E568B /* Rasspisanie.swift in Sources */,
 			);
