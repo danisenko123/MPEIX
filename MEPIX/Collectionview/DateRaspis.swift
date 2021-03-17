@@ -10,10 +10,7 @@ import UIKit
 
 class DateRaspis: UICollectionViewCell {
     
-    struct data {
-        var dayOfWeek: Int
-        
-    }
+  
     
     
 
