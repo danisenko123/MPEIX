@@ -24,6 +24,7 @@
 		30CBBCE3257BCCC2008E568B /* Rasspisanie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CBBCE2257BCCC2008E568B /* Rasspisanie.swift */; };
 		30FD041B25FD131100392AD3 /* DateRaspis.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FD041925FD131100392AD3 /* DateRaspis.swift */; };
 		30FD041C25FD131100392AD3 /* DateRaspis.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30FD041A25FD131100392AD3 /* DateRaspis.xib */; };
+		30FD0429260782DC00392AD3 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FD0428260782DB00392AD3 /* DashboardViewController.swift */; };
 		382869E4FDE7DFF84C9EFFA3 /* Pods_MEPIX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9569C5C004C910D8E1B37968 /* Pods_MEPIX.framework */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +69,7 @@
 		30CBBCE2257BCCC2008E568B /* Rasspisanie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rasspisanie.swift; sourceTree = "<group>"; };
 		30FD041925FD131100392AD3 /* DateRaspis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateRaspis.swift; sourceTree = "<group>"; };
 		30FD041A25FD131100392AD3 /* DateRaspis.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DateRaspis.xib; sourceTree = "<group>"; };
+		30FD0428260782DB00392AD3 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		9569C5C004C910D8E1B37968 /* Pods_MEPIX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MEPIX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB1C67D0D5CF56942C439299 /* Pods_MEPIX_MEPIXUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MEPIX_MEPIXUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0CA21C02FCB9354BD417FE9 /* Pods_MEPIXTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MEPIXTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -122,6 +124,7 @@
 				3067ECB62559DAB80015583C /*  OnboardingController.swift */,
 				30AC31F1256BF18E00EF8475 /* GroupViewController.swift */,
 				301E85D625949E4100C1D7E3 /* RaspisViewController.swift */,
+				30FD0428260782DB00392AD3 /* DashboardViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -356,16 +359,12 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-MEPIX/Pods-MEPIX-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
-				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
-				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -398,6 +397,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30FD0429260782DC00392AD3 /* DashboardViewController.swift in Sources */,
 				30A034D723FFBBC4005C5AA9 /* AppDelegate.swift in Sources */,
 				30A034D923FFBBC5005C5AA9 /* SceneDelegate.swift in Sources */,
 				301E85D725949E4100C1D7E3 /* RaspisViewController.swift in Sources */,
