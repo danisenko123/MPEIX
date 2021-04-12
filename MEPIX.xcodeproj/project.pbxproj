@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,7 +16,6 @@
 		30A034E023FFBBC5005C5AA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30A034DF23FFBBC5005C5AA9 /* Assets.xcassets */; };
 		30A034E323FFBBC5005C5AA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30A034E123FFBBC5005C5AA9 /* LaunchScreen.storyboard */; };
 		30AC31F2256BF18E00EF8475 /* GroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AC31F1256BF18E00EF8475 /* GroupViewController.swift */; };
-		30B19F7F240DA3CA00BD1F97 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 30B19F7D240DA3CA00BD1F97 /* Info.plist */; };
 		30B19F84240DA3DB00BD1F97 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 30B19F82240DA3DB00BD1F97 /* Info.plist */; };
 		30B7766D240E6810007BA2F1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 30B7766C240E6810007BA2F1 /* GoogleService-Info.plist */; };
 		30BF3BB3240E729100A7B2C6 /* MEPIXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B19F81240DA3DB00BD1F97 /* MEPIXTests.swift */; };
@@ -57,7 +56,6 @@
 		30A034DD23FFBBC5005C5AA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		30A034DF23FFBBC5005C5AA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30A034E223FFBBC5005C5AA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		30A034E423FFBBC5005C5AA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30A034E923FFBBC5005C5AA9 /* MEPIXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MEPIXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		30A034F423FFBBC6005C5AA9 /* MEPIXUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MEPIXUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		30AC31F1256BF18E00EF8475 /* GroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +72,7 @@
 		AB1C67D0D5CF56942C439299 /* Pods_MEPIX_MEPIXUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MEPIX_MEPIXUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0CA21C02FCB9354BD417FE9 /* Pods_MEPIXTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MEPIXTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2AE062F5EEDA6B61FB88F43 /* Pods-MEPIX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MEPIX.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MEPIX/Pods-MEPIX.debug.xcconfig"; sourceTree = "<group>"; };
+		F2220CBF2624D66C009CCFEE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,29 +101,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		305C0FFD25BAC15D00CDD56D /* Pars */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Pars;
-			sourceTree = "<group>";
-		};
-		3061BE9B25E6B56B00BD74FB /* Collectionview */ = {
-			isa = PBXGroup;
-			children = (
-				30FD041925FD131100392AD3 /* DateRaspis.swift */,
-				30FD041A25FD131100392AD3 /* DateRaspis.xib */,
-			);
-			path = Collectionview;
-			sourceTree = "<group>";
-		};
 		3067ECB9255AF78F0015583C /* View */ = {
 			isa = PBXGroup;
 			children = (
-				3067ECB62559DAB80015583C /*  OnboardingController.swift */,
-				30AC31F1256BF18E00EF8475 /* GroupViewController.swift */,
-				301E85D625949E4100C1D7E3 /* RaspisViewController.swift */,
-				30FD0428260782DB00392AD3 /* DashboardViewController.swift */,
+				F2220C062624CDF9009CCFEE /* CollectionView */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -133,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				30A034D523FFBBC4005C5AA9 /* MEPIX */,
+				F2220CBF2624D66C009CCFEE /* Info.plist */,
 				30A034D423FFBBC4005C5AA9 /* Products */,
 				30B19F80240DA3DB00BD1F97 /* MEPIXTests */,
 				30B19F7B240DA3CA00BD1F97 /* MEPIXUITests */,
@@ -154,19 +135,11 @@
 		30A034D523FFBBC4005C5AA9 /* MEPIX */ = {
 			isa = PBXGroup;
 			children = (
-				30A034D623FFBBC4005C5AA9 /* AppDelegate.swift */,
-				30A034D823FFBBC4005C5AA9 /* SceneDelegate.swift */,
-				30A034DC23FFBBC5005C5AA9 /* Main.storyboard */,
-				30A034E123FFBBC5005C5AA9 /* LaunchScreen.storyboard */,
-				3061BE9B25E6B56B00BD74FB /* Collectionview */,
-				305C0FFD25BAC15D00CDD56D /* Pars */,
-				30CBBCE1257BC789008E568B /* JsonModel */,
+				F2220C132624D30B009CCFEE /* Extensions */,
+				30CBBCE1257BC789008E568B /* Model */,
 				3067ECB9255AF78F0015583C /* View */,
-				30A034DF23FFBBC5005C5AA9 /* Assets.xcassets */,
-				30A034E423FFBBC5005C5AA9 /* Info.plist */,
-				308CAD32240D5B8700BC7098 /* Roboto-Regular.ttf */,
-				3054ACCD24449D2000648597 /* Roboto Light.ttf */,
-				30B7766C240E6810007BA2F1 /* GoogleService-Info.plist */,
+				F2220C0B2624D1A9009CCFEE /* ViewController */,
+				F2220C122624D2DB009CCFEE /* Resources */,
 			);
 			path = MEPIX;
 			sourceTree = "<group>";
@@ -189,12 +162,12 @@
 			path = MEPIXTests;
 			sourceTree = SOURCE_ROOT;
 		};
-		30CBBCE1257BC789008E568B /* JsonModel */ = {
+		30CBBCE1257BC789008E568B /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				30CBBCE2257BCCC2008E568B /* Rasspisanie.swift */,
 			);
-			path = JsonModel;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		742E3E37E943D56A07F1BE88 /* Pods */ = {
@@ -214,6 +187,48 @@
 				B0CA21C02FCB9354BD417FE9 /* Pods_MEPIXTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F2220C062624CDF9009CCFEE /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				30FD041925FD131100392AD3 /* DateRaspis.swift */,
+				30FD041A25FD131100392AD3 /* DateRaspis.xib */,
+			);
+			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		F2220C0B2624D1A9009CCFEE /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				30A034DC23FFBBC5005C5AA9 /* Main.storyboard */,
+				30A034E123FFBBC5005C5AA9 /* LaunchScreen.storyboard */,
+				3067ECB62559DAB80015583C /*  OnboardingController.swift */,
+				30AC31F1256BF18E00EF8475 /* GroupViewController.swift */,
+				301E85D625949E4100C1D7E3 /* RaspisViewController.swift */,
+				30FD0428260782DB00392AD3 /* DashboardViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		F2220C122624D2DB009CCFEE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				30A034D623FFBBC4005C5AA9 /* AppDelegate.swift */,
+				30A034D823FFBBC4005C5AA9 /* SceneDelegate.swift */,
+				30A034DF23FFBBC5005C5AA9 /* Assets.xcassets */,
+				308CAD32240D5B8700BC7098 /* Roboto-Regular.ttf */,
+				3054ACCD24449D2000648597 /* Roboto Light.ttf */,
+				30B7766C240E6810007BA2F1 /* GoogleService-Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F2220C132624D30B009CCFEE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,7 +296,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
-				LastUpgradeCheck = 1130;
+				LastUpgradeCheck = 1240;
 				ORGANIZATIONNAME = "Дима Анисенко";
 				TargetAttributes = {
 					30A034D223FFBBC4005C5AA9 = {
@@ -325,7 +340,6 @@
 				30A034E323FFBBC5005C5AA9 /* LaunchScreen.storyboard in Resources */,
 				30A034E023FFBBC5005C5AA9 /* Assets.xcassets in Resources */,
 				30FD041C25FD131100392AD3 /* DateRaspis.xib in Resources */,
-				30B19F7F240DA3CA00BD1F97 /* Info.plist in Resources */,
 				30A034DE23FFBBC5005C5AA9 /* Main.storyboard in Resources */,
 				30B7766D240E6810007BA2F1 /* GoogleService-Info.plist in Resources */,
 				3054ACCE24449D2000648597 /* Roboto Light.ttf in Resources */,
@@ -355,21 +369,16 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-MEPIX/Pods-MEPIX-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MEPIX/Pods-MEPIX-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MEPIX/Pods-MEPIX-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MEPIX/Pods-MEPIX-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MEPIX/Pods-MEPIX-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		96815EFA1C106E1CD220CF38 /* [CP] Check Pods Manifest.lock */ = {
@@ -485,6 +494,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -545,6 +555,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -588,6 +599,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mpei.mpeiapp;
 				PRODUCT_NAME = MPEIX;
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -611,6 +623,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.mpei.mpeiapp;
 				PRODUCT_NAME = MPEIX;
 				PROVISIONING_PROFILE_SPECIFIER = "";
