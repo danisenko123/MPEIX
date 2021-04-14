@@ -18,6 +18,7 @@
 		30AC31F2256BF18E00EF8475 /* GroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AC31F1256BF18E00EF8475 /* GroupViewController.swift */; };
 		30B19F84240DA3DB00BD1F97 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 30B19F82240DA3DB00BD1F97 /* Info.plist */; };
 		30B7766D240E6810007BA2F1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 30B7766C240E6810007BA2F1 /* GoogleService-Info.plist */; };
+		30BEE9C4262771AD007211C8 /* Prepod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BEE9C3262771AD007211C8 /* Prepod.swift */; };
 		30BF3BB3240E729100A7B2C6 /* MEPIXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B19F81240DA3DB00BD1F97 /* MEPIXTests.swift */; };
 		30BF3BB4240E72A200A7B2C6 /* MEPIXUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B19F7C240DA3CA00BD1F97 /* MEPIXUITests.swift */; };
 		30CBBCE3257BCCC2008E568B /* Rasspisanie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CBBCE2257BCCC2008E568B /* Rasspisanie.swift */; };
@@ -64,6 +65,7 @@
 		30B19F81240DA3DB00BD1F97 /* MEPIXTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MEPIXTests.swift; sourceTree = "<group>"; };
 		30B19F82240DA3DB00BD1F97 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30B7766C240E6810007BA2F1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		30BEE9C3262771AD007211C8 /* Prepod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prepod.swift; sourceTree = "<group>"; };
 		30CBBCE2257BCCC2008E568B /* Rasspisanie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rasspisanie.swift; sourceTree = "<group>"; };
 		30FD041925FD131100392AD3 /* DateRaspis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateRaspis.swift; sourceTree = "<group>"; };
 		30FD041A25FD131100392AD3 /* DateRaspis.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DateRaspis.xib; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				30CBBCE2257BCCC2008E568B /* Rasspisanie.swift */,
+				30BEE9C3262771AD007211C8 /* Prepod.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -410,6 +413,7 @@
 				30A034D723FFBBC4005C5AA9 /* AppDelegate.swift in Sources */,
 				30A034D923FFBBC5005C5AA9 /* SceneDelegate.swift in Sources */,
 				301E85D725949E4100C1D7E3 /* RaspisViewController.swift in Sources */,
+				30BEE9C4262771AD007211C8 /* Prepod.swift in Sources */,
 				30AC31F2256BF18E00EF8475 /* GroupViewController.swift in Sources */,
 				30FD041B25FD131100392AD3 /* DateRaspis.swift in Sources */,
 				3067ECB72559DAB80015583C /*  OnboardingController.swift in Sources */,
