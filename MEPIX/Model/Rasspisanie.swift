@@ -7,34 +7,99 @@
 //
 
 import Foundation
+import ObjectMapper
 
-struct Group: Decodable {
-    var name:String
-    var id: String
-    var weeks:[Weeks?]
+
+class Group: Mappable {
+    var name:String?
+    var id: String?
+    var groupId: String?
+    var weeks:[Weeks]?
+    var groupNumber: String?
+    var type: String?
+    
+    required init?(map: Map) {}
+      
+      func mapping(map: Map) {
+        name <- map["name"]
+        id <- map["id"]
+       groupId <- map["groupId"]
+        weeks <- map["weeks"]
+        groupNumber <- map["groupNumber"]
+        type <- map["type"]
+      }
 }
 
-struct Weeks: Decodable {
-    var weekOfYear: Int
-    var weekOfSemester: Int
-    var firstDayOfWeek: String
-    var days:[Days?]
-}
-struct Days: Decodable {
-    var dayOfWeek: Int
-    var date: String
-    var classes:[Classes?]
+class Weeks: Mappable {
+    var weekOfYear: Int?
+    var weekOfSemester: Int?
+    var firstDayOfWeek: String?
+    var days:[Days]?
+    
+    required init?(map: Map) {}
+    
+    func mapping(map: Map) {
+        weekOfSemester <- map["weekOfSemester"]
+        days <- map["days"]
+        weekOfYear <- map["weekOfYear"]
+        firstDayOfWeek <- map["firstDayOfWeek"]
+    }
 }
 
-struct Classes: Decodable {
-    var name: String
-    var rawType: String
-    var place: String
-    var groups: String
-    var person: String
-    var number: Int
-    var start: String
-    var end: String
+
+
+
+class Days: Mappable {
+    var dayOfWeek: Int?
+    var date: String?
+    var classes:[Classes]?
+    
+    required init?(map: Map) {}
+    
+    func mapping(map: Map) {
+        dayOfWeek <- map ["dayOfWeek"]
+        date <- map ["date"]
+        classes <- map ["classes"]
+      }
+
 }
+
+class Classes: Mappable {
+    var groups: String?
+    var number: Int?
+    var name: String?
+    var place: String?
+    var rawType: String?
+    var time: Time?
+    var person: String?
+    var type: String?
+    
+    required init?(map: Map) {}
+    
+    func mapping(map: Map) {
+            groups <- map["groups"]
+            number <- map["number"]
+            name <- map["name"]
+            place <- map["place"]
+            rawType <- map["rawType"]
+            time <- map["time"]
+            person <- map["person"]
+            type <- map["type"]
+        }
+}
+
+class Time: Mappable {
+    var start: String?
+    var end: String?
+
+    required init?(map: Map) {}
+
+    func mapping(map: Map) {
+        start <- map["start"]
+        end <- map["end"]
+    }
+}
+
+
 
 

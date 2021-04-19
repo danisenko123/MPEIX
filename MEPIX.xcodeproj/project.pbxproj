@@ -18,7 +18,6 @@
 		30AC31F2256BF18E00EF8475 /* GroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AC31F1256BF18E00EF8475 /* GroupViewController.swift */; };
 		30B19F84240DA3DB00BD1F97 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 30B19F82240DA3DB00BD1F97 /* Info.plist */; };
 		30B7766D240E6810007BA2F1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 30B7766C240E6810007BA2F1 /* GoogleService-Info.plist */; };
-		30BEE9C4262771AD007211C8 /* Prepod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30BEE9C3262771AD007211C8 /* Prepod.swift */; };
 		30BF3BB3240E729100A7B2C6 /* MEPIXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B19F81240DA3DB00BD1F97 /* MEPIXTests.swift */; };
 		30BF3BB4240E72A200A7B2C6 /* MEPIXUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B19F7C240DA3CA00BD1F97 /* MEPIXUITests.swift */; };
 		30CBBCE3257BCCC2008E568B /* Rasspisanie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CBBCE2257BCCC2008E568B /* Rasspisanie.swift */; };
@@ -65,14 +64,11 @@
 		30B19F81240DA3DB00BD1F97 /* MEPIXTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MEPIXTests.swift; sourceTree = "<group>"; };
 		30B19F82240DA3DB00BD1F97 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30B7766C240E6810007BA2F1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		30BEE9C3262771AD007211C8 /* Prepod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prepod.swift; sourceTree = "<group>"; };
 		30CBBCE2257BCCC2008E568B /* Rasspisanie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rasspisanie.swift; sourceTree = "<group>"; };
 		30FD041925FD131100392AD3 /* DateRaspis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateRaspis.swift; sourceTree = "<group>"; };
 		30FD041A25FD131100392AD3 /* DateRaspis.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DateRaspis.xib; sourceTree = "<group>"; };
 		30FD0428260782DB00392AD3 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		9569C5C004C910D8E1B37968 /* Pods_MEPIX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MEPIX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AB1C67D0D5CF56942C439299 /* Pods_MEPIX_MEPIXUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MEPIX_MEPIXUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B0CA21C02FCB9354BD417FE9 /* Pods_MEPIXTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MEPIXTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2AE062F5EEDA6B61FB88F43 /* Pods-MEPIX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MEPIX.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MEPIX/Pods-MEPIX.debug.xcconfig"; sourceTree = "<group>"; };
 		F2220CBF2624D66C009CCFEE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -168,7 +164,6 @@
 			isa = PBXGroup;
 			children = (
 				30CBBCE2257BCCC2008E568B /* Rasspisanie.swift */,
-				30BEE9C3262771AD007211C8 /* Prepod.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -186,8 +181,6 @@
 			isa = PBXGroup;
 			children = (
 				9569C5C004C910D8E1B37968 /* Pods_MEPIX.framework */,
-				AB1C67D0D5CF56942C439299 /* Pods_MEPIX_MEPIXUITests.framework */,
-				B0CA21C02FCB9354BD417FE9 /* Pods_MEPIXTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -245,7 +238,7 @@
 				30A034CF23FFBBC4005C5AA9 /* Sources */,
 				30A034D023FFBBC4005C5AA9 /* Frameworks */,
 				30A034D123FFBBC4005C5AA9 /* Resources */,
-				2FC7E6B987DA9F159F7D10CE /* [CP] Embed Pods Frameworks */,
+				BCB772254881307C7E8F8518 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -367,23 +360,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2FC7E6B987DA9F159F7D10CE /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MEPIX/Pods-MEPIX-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MEPIX/Pods-MEPIX-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MEPIX/Pods-MEPIX-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		96815EFA1C106E1CD220CF38 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -402,6 +378,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		BCB772254881307C7E8F8518 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MEPIX/Pods-MEPIX-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MEPIX/Pods-MEPIX-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MEPIX/Pods-MEPIX-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -413,7 +406,6 @@
 				30A034D723FFBBC4005C5AA9 /* AppDelegate.swift in Sources */,
 				30A034D923FFBBC5005C5AA9 /* SceneDelegate.swift in Sources */,
 				301E85D725949E4100C1D7E3 /* RaspisViewController.swift in Sources */,
-				30BEE9C4262771AD007211C8 /* Prepod.swift in Sources */,
 				30AC31F2256BF18E00EF8475 /* GroupViewController.swift in Sources */,
 				30FD041B25FD131100392AD3 /* DateRaspis.swift in Sources */,
 				3067ECB72559DAB80015583C /*  OnboardingController.swift in Sources */,
@@ -597,7 +589,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8822W2CGS3;
 				INFOPLIST_FILE = MEPIX/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -621,7 +613,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8822W2CGS3;
 				INFOPLIST_FILE = MEPIX/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
