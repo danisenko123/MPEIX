@@ -11,6 +11,15 @@ import UIKit
 class DateRaspis: UICollectionViewCell {
     
   
+    // добавить лейбл
+    
+    
+    
+    
+    
+    
+    
+    
     
     
 
