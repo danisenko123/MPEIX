@@ -14,7 +14,7 @@ class NetworkManager {
     static var shared = NetworkManager()
     
     func request(groupName: String, completion: @escaping (_ data: Group?, _ error: Error?) -> Void)  {
-        var url =  "https://api.kekmech.com/mpeix/schedule/v1/group/\(groupName)/schedule/0"
+        let url =  "https://api.kekmech.com/mpeix/schedule/v1/group/\(groupName)/schedule/0"
         if let urlString = url.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed){
         AF.request(urlString)
             .validate(statusCode: 200..<300)
@@ -22,11 +22,11 @@ class NetworkManager {
                 switch respons.result {
                 case .success(let data):
                     if let group = Group(JSON: data as! [String : Any]){
-                        print(group.name)
+                        //print(group.name)
                         completion(group, nil)
                     }
                 case .failure(let error):
-                    print(error)
+                    //print(error)
                     completion(nil, error)
                 }
             }
