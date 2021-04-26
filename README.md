@@ -1,7 +1,4 @@
-MpeiX - приложение МЭИ здорового человека
-
-![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/tonykolomeytsev/mpeiapp?label=version) 
-![](https://github.com/tonykolomeytsev/mpeiapp/workflows/Android%20build/badge.svg?branch=master)
+# MpeiX - приложение МЭИ здорового человека
 
 Расписание пар, заметки, личный кабинет БАРС и крутая карта для студентов и преподавателей НИУ МЭИ. Самое функциональное, легковесное и стабильное МЭИшное приложение.
 
