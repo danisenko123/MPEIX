@@ -421,7 +421,7 @@
         <!--Raspis View Controller-->
         <scene sceneID="6em-PK-LqZ">
             <objects>
-                <viewController id="MH3-vw-qAH" customClass="RaspisViewController" customModule="MPEIX" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="MH3-vw-qAH" customClass="RaspisViewController" customModule="MPEIX" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JBY-D1-02W">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -450,18 +450,37 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="yar-xY-7Jg">
+                                <rect key="frame" x="0.0" y="58" width="414" height="701"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="99u-CG-S5j">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="W8G-df-m6m"/>
                         <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="jRv-77-FXv" firstAttribute="leading" secondItem="W8G-df-m6m" secondAttribute="leading" id="KdC-fl-ohb"/>
+                            <constraint firstItem="yar-xY-7Jg" firstAttribute="top" secondItem="jRv-77-FXv" secondAttribute="bottom" constant="8" symbolic="YES" id="SCc-dh-5bc"/>
                             <constraint firstItem="W8G-df-m6m" firstAttribute="trailing" secondItem="jRv-77-FXv" secondAttribute="trailing" id="T89-e2-1e7"/>
+                            <constraint firstItem="W8G-df-m6m" firstAttribute="trailing" secondItem="yar-xY-7Jg" secondAttribute="trailing" id="UGf-O4-yhq"/>
+                            <constraint firstItem="W8G-df-m6m" firstAttribute="bottom" secondItem="yar-xY-7Jg" secondAttribute="bottom" id="cCC-rP-YjG"/>
+                            <constraint firstItem="yar-xY-7Jg" firstAttribute="leading" secondItem="W8G-df-m6m" secondAttribute="leading" id="t8Z-9O-meO"/>
                             <constraint firstItem="jRv-77-FXv" firstAttribute="top" secondItem="W8G-df-m6m" secondAttribute="top" id="zwJ-vF-qBj"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="map-1" id="2H1-zf-NbY">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="Date" destination="jRv-77-FXv" id="ZuJ-i9-VR8"/>
+                        <outlet property="Raspisanie" destination="yar-xY-7Jg" id="2eG-6H-Xph"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C0J-Ef-8lc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

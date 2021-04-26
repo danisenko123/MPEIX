@@ -10,6 +10,11 @@ import UIKit
 
 class RaspisViewController: UIViewController {
 
+    @IBOutlet weak var Date: UICollectionView!
+    
+    @IBOutlet weak var Raspisanie: UICollectionView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
