@@ -10,6 +10,8 @@
 		301E85D725949E4100C1D7E3 /* RaspisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301E85D625949E4100C1D7E3 /* RaspisViewController.swift */; };
 		3022813326372B5500F1EA8C /* Raspisanie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3022813126372B5500F1EA8C /* Raspisanie.swift */; };
 		3022813426372B5500F1EA8C /* Raspisanie.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3022813226372B5500F1EA8C /* Raspisanie.xib */; };
+		302281492637585600F1EA8C /* GroupTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302281472637585600F1EA8C /* GroupTable.swift */; };
+		3022814A2637585600F1EA8C /* GroupTable.xib in Resources */ = {isa = PBXBuildFile; fileRef = 302281482637585600F1EA8C /* GroupTable.xib */; };
 		3054ACCE24449D2000648597 /* Roboto Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3054ACCD24449D2000648597 /* Roboto Light.ttf */; };
 		3067ECB72559DAB80015583C /*  OnboardingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3067ECB62559DAB80015583C /*  OnboardingController.swift */; };
 		30A034D723FFBBC4005C5AA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A034D623FFBBC4005C5AA9 /* AppDelegate.swift */; };
@@ -59,6 +61,8 @@
 		301E85D625949E4100C1D7E3 /* RaspisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaspisViewController.swift; sourceTree = "<group>"; };
 		3022813126372B5500F1EA8C /* Raspisanie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Raspisanie.swift; sourceTree = "<group>"; };
 		3022813226372B5500F1EA8C /* Raspisanie.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Raspisanie.xib; sourceTree = "<group>"; };
+		302281472637585600F1EA8C /* GroupTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupTable.swift; sourceTree = "<group>"; };
+		302281482637585600F1EA8C /* GroupTable.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GroupTable.xib; sourceTree = "<group>"; };
 		3054ACCD24449D2000648597 /* Roboto Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto Light.ttf"; sourceTree = "<group>"; };
 		3067ECB62559DAB80015583C /*  OnboardingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " OnboardingController.swift"; sourceTree = "<group>"; };
 		308CAD32240D5B8700BC7098 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
@@ -113,9 +117,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3022813B2637577100F1EA8C /* TablViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				302281472637585600F1EA8C /* GroupTable.swift */,
+				302281482637585600F1EA8C /* GroupTable.xib */,
+			);
+			path = TablViewCell;
+			sourceTree = "<group>";
+		};
 		3067ECB9255AF78F0015583C /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3022813B2637577100F1EA8C /* TablViewCell */,
 				F2220C062624CDF9009CCFEE /* CollectionView */,
 			);
 			path = View;
@@ -363,6 +377,7 @@
 				30A034E023FFBBC5005C5AA9 /* Assets.xcassets in Resources */,
 				30FD041C25FD131100392AD3 /* DateRaspis.xib in Resources */,
 				3022813426372B5500F1EA8C /* Raspisanie.xib in Resources */,
+				3022814A2637585600F1EA8C /* GroupTable.xib in Resources */,
 				30A034DE23FFBBC5005C5AA9 /* Main.storyboard in Resources */,
 				30B7766D240E6810007BA2F1 /* GoogleService-Info.plist in Resources */,
 				3054ACCE24449D2000648597 /* Roboto Light.ttf in Resources */,
@@ -433,6 +448,7 @@
 				30FD0429260782DC00392AD3 /* DashboardViewController.swift in Sources */,
 				30A034D723FFBBC4005C5AA9 /* AppDelegate.swift in Sources */,
 				F20214FA2631CD1F00919125 /* NetworkManager.swift in Sources */,
+				302281492637585600F1EA8C /* GroupTable.swift in Sources */,
 				30A034D923FFBBC5005C5AA9 /* SceneDelegate.swift in Sources */,
 				301E85D725949E4100C1D7E3 /* RaspisViewController.swift in Sources */,
 				30AC31F2256BF18E00EF8475 /* GroupViewController.swift in Sources */,
