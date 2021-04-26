@@ -20,10 +20,5 @@
 
 Пулл реквесты приветствуются.
 
-[![](https://github.com/tonykolomeytsev/mpeiapp/raw/master/screenshots/3.png)](https://play.google.com/store/apps/details?id=kekmech.ru.mpeiapp)
 
-### Скриншоты
 
-![screenshots 1](https://github.com/tonykolomeytsev/mpeiapp/raw/master/screenshots/promo_wide_frame_1.png)
-
-![screenshots 2](https://github.com/tonykolomeytsev/mpeiapp/raw/master/screenshots/promo_wide_frame_2.png)
