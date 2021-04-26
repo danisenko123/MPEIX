@@ -14,15 +14,13 @@ class DateRaspis: UICollectionViewCell {
     // добавить лейбл
     
     
+    @IBOutlet weak var Week: UILabel!
+    
+    @IBOutlet weak var Date: UILabel!
     
     
+    @IBOutlet weak var Mac: UILabel!
     
-    
-    
-    
-    
-    
-
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
