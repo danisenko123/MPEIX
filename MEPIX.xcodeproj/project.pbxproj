@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		301E85D725949E4100C1D7E3 /* RaspisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301E85D625949E4100C1D7E3 /* RaspisViewController.swift */; };
+		3022813326372B5500F1EA8C /* Raspisanie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3022813126372B5500F1EA8C /* Raspisanie.swift */; };
+		3022813426372B5500F1EA8C /* Raspisanie.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3022813226372B5500F1EA8C /* Raspisanie.xib */; };
 		3054ACCE24449D2000648597 /* Roboto Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3054ACCD24449D2000648597 /* Roboto Light.ttf */; };
 		3067ECB72559DAB80015583C /*  OnboardingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3067ECB62559DAB80015583C /*  OnboardingController.swift */; };
 		30A034D723FFBBC4005C5AA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A034D623FFBBC4005C5AA9 /* AppDelegate.swift */; };
@@ -55,6 +57,8 @@
 /* Begin PBXFileReference section */
 		055AE819B791BD1AFD805274 /* Pods-MEPIX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MEPIX.release.xcconfig"; path = "Pods/Target Support Files/Pods-MEPIX/Pods-MEPIX.release.xcconfig"; sourceTree = "<group>"; };
 		301E85D625949E4100C1D7E3 /* RaspisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaspisViewController.swift; sourceTree = "<group>"; };
+		3022813126372B5500F1EA8C /* Raspisanie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Raspisanie.swift; sourceTree = "<group>"; };
+		3022813226372B5500F1EA8C /* Raspisanie.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Raspisanie.xib; sourceTree = "<group>"; };
 		3054ACCD24449D2000648597 /* Roboto Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto Light.ttf"; sourceTree = "<group>"; };
 		3067ECB62559DAB80015583C /*  OnboardingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " OnboardingController.swift"; sourceTree = "<group>"; };
 		308CAD32240D5B8700BC7098 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
@@ -201,6 +205,8 @@
 			children = (
 				30FD041925FD131100392AD3 /* DateRaspis.swift */,
 				30FD041A25FD131100392AD3 /* DateRaspis.xib */,
+				3022813126372B5500F1EA8C /* Raspisanie.swift */,
+				3022813226372B5500F1EA8C /* Raspisanie.xib */,
 			);
 			path = CollectionView;
 			sourceTree = "<group>";
@@ -356,6 +362,7 @@
 				30A034E323FFBBC5005C5AA9 /* LaunchScreen.storyboard in Resources */,
 				30A034E023FFBBC5005C5AA9 /* Assets.xcassets in Resources */,
 				30FD041C25FD131100392AD3 /* DateRaspis.xib in Resources */,
+				3022813426372B5500F1EA8C /* Raspisanie.xib in Resources */,
 				30A034DE23FFBBC5005C5AA9 /* Main.storyboard in Resources */,
 				30B7766D240E6810007BA2F1 /* GoogleService-Info.plist in Resources */,
 				3054ACCE24449D2000648597 /* Roboto Light.ttf in Resources */,
@@ -422,6 +429,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3022813326372B5500F1EA8C /* Raspisanie.swift in Sources */,
 				30FD0429260782DC00392AD3 /* DashboardViewController.swift in Sources */,
 				30A034D723FFBBC4005C5AA9 /* AppDelegate.swift in Sources */,
 				F20214FA2631CD1F00919125 /* NetworkManager.swift in Sources */,
@@ -616,8 +624,6 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8822W2CGS3;
-				INFOPLIST_FILE = MEPIX/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -642,8 +648,6 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8822W2CGS3;
-				INFOPLIST_FILE = MEPIX/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (

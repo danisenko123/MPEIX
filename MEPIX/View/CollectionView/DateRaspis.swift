@@ -10,20 +10,28 @@ import UIKit
 
 class DateRaspis: UICollectionViewCell {
     
-  
-    // добавить лейбл
-    
-    
     @IBOutlet weak var Week: UILabel!
-    
     @IBOutlet weak var Date: UILabel!
-    
-    
     @IBOutlet weak var Mac: UILabel!
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        self.contentView.backgroundColor = .white
+    }
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
+    func setupCell(days:Weeks,isSelected:Bool){
+        self.Week.text = days.firstDayOfWeek
+        if isSelected{
+          self.contentView.backgroundColor = .orange
+        }else{
+           self.contentView.backgroundColor = .white
+        }
+    }
+    
+    
 
 }
