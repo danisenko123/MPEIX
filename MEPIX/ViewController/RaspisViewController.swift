@@ -15,6 +15,15 @@ class RaspisViewController: UIViewController {
     @IBOutlet weak var Raspisanie: UICollectionView!
     
     
+    var date:Weeks!
+    var selectedDate:Weeks?{
+        didSet{
+            if let dateS = self.selectedDate{
+                self.title = dateS.firstDayOfWeek
+            }
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
