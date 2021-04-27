@@ -33,7 +33,7 @@ class GroupViewController: UIViewController {
     @IBAction func ButtonViewRass(_ sender: Any) {
         
         
-        // для такста работы менеджера
+        // для такста работы менеджерацц
         if let groupName = GroupTextField.text{
             networkManager.request(groupName: groupName) { (resp, err) in
                 if let resp = resp{
