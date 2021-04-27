@@ -16,9 +16,7 @@
 		30A034E023FFBBC5005C5AA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30A034DF23FFBBC5005C5AA9 /* Assets.xcassets */; };
 		30A034E323FFBBC5005C5AA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30A034E123FFBBC5005C5AA9 /* LaunchScreen.storyboard */; };
 		30AC31F2256BF18E00EF8475 /* GroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AC31F1256BF18E00EF8475 /* GroupViewController.swift */; };
-		30B19F7F240DA3CA00BD1F97 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 30B19F7D240DA3CA00BD1F97 /* Info.plist */; };
 		30B19F84240DA3DB00BD1F97 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 30B19F82240DA3DB00BD1F97 /* Info.plist */; };
-		30B7766D240E6810007BA2F1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 30B7766C240E6810007BA2F1 /* GoogleService-Info.plist */; };
 		30BF3BB3240E729100A7B2C6 /* MEPIXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B19F81240DA3DB00BD1F97 /* MEPIXTests.swift */; };
 		30BF3BB4240E72A200A7B2C6 /* MEPIXUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B19F7C240DA3CA00BD1F97 /* MEPIXUITests.swift */; };
 		30CBBCE3257BCCC2008E568B /* Rasspisanie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CBBCE2257BCCC2008E568B /* Rasspisanie.swift */; };
@@ -65,7 +63,6 @@
 		30B19F7D240DA3CA00BD1F97 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30B19F81240DA3DB00BD1F97 /* MEPIXTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MEPIXTests.swift; sourceTree = "<group>"; };
 		30B19F82240DA3DB00BD1F97 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		30B7766C240E6810007BA2F1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		30CBBCE2257BCCC2008E568B /* Rasspisanie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rasspisanie.swift; sourceTree = "<group>"; };
 		30FD041925FD131100392AD3 /* DateRaspis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateRaspis.swift; sourceTree = "<group>"; };
 		30FD041A25FD131100392AD3 /* DateRaspis.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DateRaspis.xib; sourceTree = "<group>"; };
@@ -102,13 +99,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		305C0FFD25BAC15D00CDD56D /* Pars */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Pars;
-			sourceTree = "<group>";
-		};
 		3061BE9B25E6B56B00BD74FB /* Collectionview */ = {
 			isa = PBXGroup;
 			children = (
@@ -159,14 +149,12 @@
 				30A034DC23FFBBC5005C5AA9 /* Main.storyboard */,
 				30A034E123FFBBC5005C5AA9 /* LaunchScreen.storyboard */,
 				3061BE9B25E6B56B00BD74FB /* Collectionview */,
-				305C0FFD25BAC15D00CDD56D /* Pars */,
 				30CBBCE1257BC789008E568B /* JsonModel */,
 				3067ECB9255AF78F0015583C /* View */,
 				30A034DF23FFBBC5005C5AA9 /* Assets.xcassets */,
 				30A034E423FFBBC5005C5AA9 /* Info.plist */,
 				308CAD32240D5B8700BC7098 /* Roboto-Regular.ttf */,
 				3054ACCD24449D2000648597 /* Roboto Light.ttf */,
-				30B7766C240E6810007BA2F1 /* GoogleService-Info.plist */,
 			);
 			path = MEPIX;
 			sourceTree = "<group>";
@@ -227,7 +215,6 @@
 				30A034CF23FFBBC4005C5AA9 /* Sources */,
 				30A034D023FFBBC4005C5AA9 /* Frameworks */,
 				30A034D123FFBBC4005C5AA9 /* Resources */,
-				2FC7E6B987DA9F159F7D10CE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -325,9 +312,7 @@
 				30A034E323FFBBC5005C5AA9 /* LaunchScreen.storyboard in Resources */,
 				30A034E023FFBBC5005C5AA9 /* Assets.xcassets in Resources */,
 				30FD041C25FD131100392AD3 /* DateRaspis.xib in Resources */,
-				30B19F7F240DA3CA00BD1F97 /* Info.plist in Resources */,
 				30A034DE23FFBBC5005C5AA9 /* Main.storyboard in Resources */,
-				30B7766D240E6810007BA2F1 /* GoogleService-Info.plist in Resources */,
 				3054ACCE24449D2000648597 /* Roboto Light.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -350,28 +335,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2FC7E6B987DA9F159F7D10CE /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-MEPIX/Pods-MEPIX-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MEPIX/Pods-MEPIX-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		96815EFA1C106E1CD220CF38 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

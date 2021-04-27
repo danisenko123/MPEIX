@@ -7,7 +7,6 @@
 //
 
 import XCTest
-@testable import MEPIX
 
 class MEPIXTests: XCTestCase {
 
