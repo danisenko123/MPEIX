@@ -309,6 +309,73 @@
             </objects>
             <point key="canvasLocation" x="1722" y="1060"/>
         </scene>
+        <!--Map Bottom View Controller-->
+        <scene sceneID="L2b-xO-DpC">
+            <objects>
+                <viewController storyboardIdentifier="MapBottomViewController" id="d5I-f4-rCd" customClass="MapBottomViewController" customModule="MPEIX" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gLA-Il-ViH">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="31" translatesAutoresizingMaskIntoConstraints="NO" id="Z18-Q6-6kr">
+                                <rect key="frame" x="0.0" y="44" width="414" height="70"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hWv-Ai-PFU">
+                                        <rect key="frame" x="0.0" y="0.0" width="58" height="70"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RnH-aa-q6H">
+                                        <rect key="frame" x="89" y="0.0" width="58" height="70"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dY0-jP-fVX">
+                                        <rect key="frame" x="178" y="0.0" width="58" height="70"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v1k-x9-xcQ">
+                                        <rect key="frame" x="267" y="0.0" width="58" height="70"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vXA-S1-Opi">
+                                        <rect key="frame" x="356" y="0.0" width="58" height="70"/>
+                                        <state key="normal" title="Button"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="664-rO-HsH"/>
+                                </constraints>
+                            </stackView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="B3p-s4-jO6">
+                                <rect key="frame" x="0.0" y="114" width="414" height="748"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <sections/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Gyf-96-9zj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Gyf-96-9zj" firstAttribute="trailing" secondItem="B3p-s4-jO6" secondAttribute="trailing" id="5iy-MJ-K2r"/>
+                            <constraint firstItem="B3p-s4-jO6" firstAttribute="top" secondItem="Z18-Q6-6kr" secondAttribute="bottom" id="CDB-vE-3t0"/>
+                            <constraint firstItem="Gyf-96-9zj" firstAttribute="bottom" secondItem="B3p-s4-jO6" secondAttribute="bottom" id="VgL-F4-Ety"/>
+                            <constraint firstItem="Z18-Q6-6kr" firstAttribute="top" secondItem="Gyf-96-9zj" secondAttribute="top" id="dSf-K1-1VD"/>
+                            <constraint firstItem="Z18-Q6-6kr" firstAttribute="leading" secondItem="Gyf-96-9zj" secondAttribute="leading" id="f8R-bw-5Sk"/>
+                            <constraint firstItem="Gyf-96-9zj" firstAttribute="trailing" secondItem="Z18-Q6-6kr" secondAttribute="trailing" id="obF-Ox-a6L"/>
+                            <constraint firstItem="B3p-s4-jO6" firstAttribute="leading" secondItem="Gyf-96-9zj" secondAttribute="leading" id="urH-aV-A0D"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="B3p-s4-jO6" id="yAO-3H-Olk"/>
+                        <outletCollection property="buttons" destination="RnH-aa-q6H" collectionClass="NSMutableArray" id="MEa-1h-yj3"/>
+                        <outletCollection property="buttons" destination="hWv-Ai-PFU" collectionClass="NSMutableArray" id="0RY-vJ-59m"/>
+                        <outletCollection property="buttons" destination="dY0-jP-fVX" collectionClass="NSMutableArray" id="dg4-2B-mJM"/>
+                        <outletCollection property="buttons" destination="v1k-x9-xcQ" collectionClass="NSMutableArray" id="pUf-7l-ALK"/>
+                        <outletCollection property="buttons" destination="vXA-S1-Opi" collectionClass="NSMutableArray" id="fFE-Wa-ax5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kWE-Ac-pdb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3199" y="957"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="sVz-aa-oeU">
             <objects>
@@ -392,37 +459,41 @@
             </objects>
             <point key="canvasLocation" x="3818.8405797101454" y="245.75892857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--Map View Controller-->
         <scene sceneID="9V2-GD-CJk">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="JvD-hm-MbK" sceneMemberID="viewController">
+                <viewController wantsFullScreenLayout="YES" providesPresentationContextTransitionStyle="YES" id="JvD-hm-MbK" customClass="MapViewController" customModule="MPEIX" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Lws-la-EOr">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Тут будет Карта " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aew-0Z-w1T">
-                                <rect key="frame" x="110" y="407" width="194" height="32"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ZnE-kt-uzJ">
+                                <rect key="frame" x="0.0" y="-6" width="414" height="819"/>
+                            </mapView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="K3W-wb-7Ue"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZnE-kt-uzJ" firstAttribute="top" secondItem="K3W-wb-7Ue" secondAttribute="top" constant="-50" id="2JX-sJ-iDA"/>
+                            <constraint firstItem="ZnE-kt-uzJ" firstAttribute="leading" secondItem="K3W-wb-7Ue" secondAttribute="leading" id="Uzf-T4-FOl"/>
+                            <constraint firstItem="K3W-wb-7Ue" firstAttribute="bottom" secondItem="ZnE-kt-uzJ" secondAttribute="bottom" id="cGs-xv-9Zf"/>
+                            <constraint firstItem="K3W-wb-7Ue" firstAttribute="trailing" secondItem="ZnE-kt-uzJ" secondAttribute="trailing" id="uUg-az-B2B"/>
+                        </constraints>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <tabBarItem key="tabBarItem" title="" image="map-1" id="H49-dC-WqT"/>
+                    <nil key="simulatedTopBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1Kd-kP-Ej2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3157" y="236"/>
+            <point key="canvasLocation" x="3156.521739130435" y="235.71428571428569"/>
         </scene>
         <!--Raspis View Controller-->
         <scene sceneID="6em-PK-LqZ">
             <objects>
                 <viewController id="MH3-vw-qAH" customClass="RaspisViewController" customModule="MPEIX" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JBY-D1-02W">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Тут будет Расписание " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1si-mh-Ddh">
