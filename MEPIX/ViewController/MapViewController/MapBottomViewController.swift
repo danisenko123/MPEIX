@@ -2,7 +2,7 @@
 //  MapBottomViewController.swift
 //  MEPIX
 //
-//  Created by Морозов Иван on 27.04.2021.
+//  Created by Дима Анисенко on 27.04.2021.
 //  Copyright © 2021 Дима Анисенко. All rights reserved.
 //
 
