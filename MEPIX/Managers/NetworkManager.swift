@@ -34,4 +34,27 @@ class NetworkManager {
             
         
     }
+    
+    
+    func request(completion: @escaping (_ data: MapModel?, _ error: Error?) -> Void)  {
+        let url =  "https://api.kekmech.com/mpeix/map/getMapMarkers"
+        if let urlString = url.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed){
+        AF.request(urlString)
+            .validate(statusCode: 200..<300)
+            .responseJSON { (respons) in
+                switch respons.result {
+                case .success(let data):
+                    if let item = MapModel(JSON: data as! [String : Any]){
+                        print(item.markers?.first?.name)
+                        completion(item, nil)
+                    }
+                case .failure(let error):
+                    print(error)
+                    completion(nil, error)
+                }
+            }
+        }
+            
+        
+    }
 }

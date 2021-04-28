@@ -8,8 +8,11 @@
 
 import UIKit
 import FloatingPanel
+import MapKit
 
 class MapViewController: UIViewController {
+    
+    @IBOutlet weak var mapView: MKMapView!
     
     var fpc: FloatingPanelController!
 
@@ -28,6 +31,7 @@ class MapViewController: UIViewController {
         
 //        fpc.isRemovalInteractionEnabled = true
 //        present(fpc, animated: true, completion: nil)
+        
     }
     
 

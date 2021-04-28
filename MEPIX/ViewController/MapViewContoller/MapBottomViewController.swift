@@ -9,6 +9,10 @@
 import UIKit
 
 class MapBottomViewController: UIViewController {
+    
+    let networkManager = NetworkManager.shared
+    
+    var markers: [Markers] = []
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -20,14 +24,29 @@ class MapBottomViewController: UIViewController {
         super.viewDidLoad()
 
         setNames()
+        getMarkers()
+        
         tableView.dataSource = self
+        tableView.delegate = self
+        tableView.separatorStyle = .none
     }
     
 
     func setNames(){
         for (index, button) in buttons.enumerated(){
             button.setImage(UIImage(named: arrName[index]), for: .normal)
-//            button.
+
+        }
+    }
+    
+    func getMarkers() {
+        networkManager.request { [weak self] (resp, error) in
+            guard let self = self else {return}
+//            guard let error = error else {print("не получилось "); return}
+            if let mapmodel = resp, let items = mapmodel.markers {
+                self.markers = items
+                self.tableView.reloadData()
+            }
         }
     }
 
@@ -35,12 +54,38 @@ class MapBottomViewController: UIViewController {
 
 extension MapBottomViewController: UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        10
+        markers.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        UITableViewCell()
+        
+        let marker = markers[indexPath.row]
+        
+        let cell = UITableViewCell()
+        var content = cell.defaultContentConfiguration()
+        
+        content.text = marker.name
+        content.secondaryText = marker.address
+        
+        cell.contentConfiguration = content
+        
+        return cell
+        
     }
     
+    
+    
+}
+
+extension MapBottomViewController: UITableViewDelegate{
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+         let view = UILabel()
+        view.text = "   Места общепита"
+        view.font = UIFont.boldSystemFont(ofSize: 30)
+        view.backgroundColor = .white
+        
+        return view
+    }
     
 }
