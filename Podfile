@@ -7,5 +7,7 @@ target 'MEPIX' do
 
   pod 'Alamofire'
   pod 'ObjectMapper'
+  pod 'FloatingPanel'
+  pod 'SnapKit'
   
 end

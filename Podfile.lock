@@ -1,20 +1,28 @@
 PODS:
   - Alamofire (5.4.3)
+  - FloatingPanel (2.3.0)
   - ObjectMapper (4.2.0)
+  - SnapKit (5.0.1)
 
 DEPENDENCIES:
   - Alamofire
+  - FloatingPanel
   - ObjectMapper
+  - SnapKit
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - FloatingPanel
     - ObjectMapper
+    - SnapKit
 
 SPEC CHECKSUMS:
   Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
+  FloatingPanel: 373478513a197cf140abd219ca9a9c049967332b
   ObjectMapper: 1eb41f610210777375fa806bf161dc39fb832b81
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
 
-PODFILE CHECKSUM: 1d3c4233d5d720ab34c73660ff71519e68f2ffd3
+PODFILE CHECKSUM: 061e1bf202bc9d0e0f03c3c40289e58baf39e03a
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.10.0
