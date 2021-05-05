@@ -11,6 +11,7 @@ import UIKit
 class RaspisViewController: UIViewController {
     let networkManager = NetworkManager.shared
     
+    var raspis: [Classes] = []
     
     
     
