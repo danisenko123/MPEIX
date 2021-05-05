@@ -45,16 +45,16 @@ class NetworkManager {
                 switch respons.result {
                 case .success(let data):
                     if let item = MapModel(JSON: data as! [String : Any]){
-                        print(item.markers?.first?.name)
+                        //print(item.markers?.first?.name)
                         completion(item, nil)
                     }
                 case .failure(let error):
-                    print(error)
+                    //print(error)
                     completion(nil, error)
                 }
             }
         }
-            
         
+            
     }
 }
