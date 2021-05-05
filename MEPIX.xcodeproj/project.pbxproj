@@ -31,6 +31,9 @@
 		F204DAA72639C14B002B2778 /* MapBottomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F204DAA62639C14B002B2778 /* MapBottomViewController.swift */; };
 		F204DAA82639C14B002B2778 /* MapBottomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F204DAA62639C14B002B2778 /* MapBottomViewController.swift */; };
 		F204DAA92639C14B002B2778 /* MapBottomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F204DAA62639C14B002B2778 /* MapBottomViewController.swift */; };
+		F2443AD62642BE8C001F0B2E /* MapManagers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2443AD52642BE8C001F0B2E /* MapManagers.swift */; };
+		F2443AD72642BE8C001F0B2E /* MapManagers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2443AD52642BE8C001F0B2E /* MapManagers.swift */; };
+		F2443AD82642BE8C001F0B2E /* MapManagers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2443AD52642BE8C001F0B2E /* MapManagers.swift */; };
 		F2BE034326275EF800921318 /* GroupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BE034226275EF800921318 /* GroupModel.swift */; };
 		F2BE034426275EF800921318 /* GroupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BE034226275EF800921318 /* GroupModel.swift */; };
 		F2BE034526275EF800921318 /* GroupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2BE034226275EF800921318 /* GroupModel.swift */; };
@@ -86,6 +89,7 @@
 		F204DA9C2639C129002B2778 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		F204DAA62639C14B002B2778 /* MapBottomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapBottomViewController.swift; sourceTree = "<group>"; };
 		F2220CBF2624D66C009CCFEE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2443AD52642BE8C001F0B2E /* MapManagers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapManagers.swift; sourceTree = "<group>"; };
 		F2BE034226275EF800921318 /* GroupModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupModel.swift; sourceTree = "<group>"; };
 		F2BE034F2627647200921318 /* TableViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableViewCell+Extension.swift"; sourceTree = "<group>"; };
 		F2F1D6CE2639CC9C00C34E99 /* MapModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapModel.swift; sourceTree = "<group>"; };
@@ -201,6 +205,7 @@
 			children = (
 				F204DA9C2639C129002B2778 /* MapViewController.swift */,
 				F204DAA62639C14B002B2778 /* MapBottomViewController.swift */,
+				F2443AD52642BE8C001F0B2E /* MapManagers.swift */,
 			);
 			path = MapViewContoller;
 			sourceTree = "<group>";
@@ -423,6 +428,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2F1D6CF2639CC9C00C34E99 /* MapModel.swift in Sources */,
+				F2443AD62642BE8C001F0B2E /* MapManagers.swift in Sources */,
 				30FD0429260782DC00392AD3 /* DashboardViewController.swift in Sources */,
 				30A034D723FFBBC4005C5AA9 /* AppDelegate.swift in Sources */,
 				F20214FA2631CD1F00919125 /* NetworkManager.swift in Sources */,
@@ -441,6 +447,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2443AD72642BE8C001F0B2E /* MapManagers.swift in Sources */,
 				F204DAA82639C14B002B2778 /* MapBottomViewController.swift in Sources */,
 				F20214FB2631CD1F00919125 /* NetworkManager.swift in Sources */,
 				F2BE03512627647200921318 /* TableViewCell+Extension.swift in Sources */,
@@ -455,6 +462,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2443AD82642BE8C001F0B2E /* MapManagers.swift in Sources */,
 				F204DAA92639C14B002B2778 /* MapBottomViewController.swift in Sources */,
 				F20214FC2631CD1F00919125 /* NetworkManager.swift in Sources */,
 				F2BE03522627647200921318 /* TableViewCell+Extension.swift in Sources */,

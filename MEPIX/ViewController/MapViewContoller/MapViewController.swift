@@ -12,19 +12,28 @@ import MapKit
 
 class MapViewController: UIViewController {
     
-    let networkManager = NetworkManager.shared
+    //MARK:- Constraints
+    let manager = MapManager.shared
     var mapBottomVC = MapBottomViewController()
     
+    
+    //MARK:- Outlet
     @IBOutlet weak var mapView: MKMapView!
     
-    var markers: [Markers] = []
+    
+    //MARK:- Properties
     var fpc: FloatingPanelController!
+    
+    // Для оцентровки института при открытии карты
+    let initialLocation = CLLocation(latitude: 55.755462, longitude: 37.708806)
 
+
+    
+    //MARK:- LifeCicle
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        getMarkers()
-
+        
         fpc = FloatingPanelController()
         fpc.delegate = self
         mapBottomVC = storyboard?.instantiateViewController(identifier: "MapBottomViewController") as! MapBottomViewController
@@ -37,24 +46,27 @@ class MapViewController: UIViewController {
 //        fpc.isRemovalInteractionEnabled = true
 //        present(fpc, animated: true, completion: nil)
 //        mapView.addAnnotations(mapBottomVC.markers)
+        mapView.centerToLocation(initialLocation)
+        
+        manager.getMarkers {
+            self.mapView.addAnnotations(self.manager.markers)
+            self.mapBottomVC.tableView.reloadData()
+        }
+
     }
     
-
-    func getMarkers() {
-        networkManager.request { [weak self] (resp, error) in
-            guard let self = self else {return}
-//            guard let error = error else {print("не получилось "); return}
-            if let mapmodel = resp, let items = mapmodel.markers {
-                self.markers = items
-                self.mapBottomVC.markers = self.markers
-                self.mapView.addAnnotations(self.markers)
-            }
-        }
-    }
 
     
 }
 
 extension MapViewController: FloatingPanelControllerDelegate{
     
+}
+
+
+private extension MKMapView {
+  func centerToLocation( _ location: CLLocation, regionRadius: CLLocationDistance = 1000) {
+    let coordinateRegion = MKCoordinateRegion(center: location.coordinate, latitudinalMeters: regionRadius, longitudinalMeters: regionRadius)
+    setRegion(coordinateRegion, animated: true)
+  }
 }

@@ -10,14 +10,9 @@ import UIKit
 
 class MapBottomViewController: UIViewController {
     
-    let networkManager = NetworkManager.shared
-    
-    var markers: [Markers] = []{
-        didSet{
-            tableView.reloadData()
-        }
-    }
+    let manager = MapManager.shared
 
+    
     @IBOutlet weak var tableView: UITableView!
     
     @IBOutlet var buttons: [UIButton]!
@@ -47,12 +42,12 @@ class MapBottomViewController: UIViewController {
 
 extension MapBottomViewController: UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        markers.count
+        manager.markers.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let marker = markers[indexPath.row]
+        let marker = manager.markers[indexPath.row]
         
         let cell = UITableViewCell()
         var content = cell.defaultContentConfiguration()
