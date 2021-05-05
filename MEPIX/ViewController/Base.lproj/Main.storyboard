@@ -520,62 +520,75 @@
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f7D-WB-rXr">
                                                     <rect key="frame" x="0.0" y="0.0" width="414" height="141"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="9:20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wQn-2A-5H8">
-                                                            <rect key="frame" x="14" y="38" width="36" height="21"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9:20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wQn-2A-5H8">
+                                                            <rect key="frame" x="10" y="38" width="31" height="19"/>
+                                                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="10:55" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1RX-Ex-s3v">
-                                                            <rect key="frame" x="11" y="82" width="43" height="21"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10:55" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1RX-Ex-s3v">
+                                                            <rect key="frame" x="10" y="68" width="35" height="16.5"/>
+                                                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Инженерная и комп. графика" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xo6-HM-bWi">
-                                                            <rect key="frame" x="105" y="38" width="235" height="21"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Инженерная и комп. графика" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xo6-HM-bWi">
+                                                            <rect key="frame" x="96" y="29" width="249" height="21.5"/>
+                                                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="18"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Б-407" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2hk-be-CIv">
-                                                            <rect key="frame" x="105" y="67" width="48" height="21"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Б-407" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2hk-be-CIv">
+                                                            <rect key="frame" x="96" y="58.5" width="36.5" height="16.5"/>
+                                                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Чахеев Е.Я." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F75-ST-I5G">
-                                                            <rect key="frame" x="105" y="98" width="91" height="21"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Чахеев Е.Я." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F75-ST-I5G">
+                                                            <rect key="frame" x="94" y="85" width="90.5" height="16.5"/>
+                                                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3 пара" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gEM-FX-5kn">
-                                                            <rect key="frame" x="105" y="8" width="53" height="21"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3 пара" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gEM-FX-5kn">
+                                                            <rect key="frame" x="105" y="8" width="30.5" height="12"/>
+                                                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="10"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ПРАКТИКА" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2mX-bT-EvY">
-                                                            <rect key="frame" x="196" y="9" width="89" height="21"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ПРАКТИКА" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2mX-bT-EvY">
+                                                            <rect key="frame" x="173.5" y="9" width="52" height="12"/>
+                                                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="10"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uYX-Ya-rh8">
-                                                            <rect key="frame" x="364" y="63" width="42" height="40"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uYX-Ya-rh8">
+                                                            <rect key="frame" x="352.5" y="66" width="57.5" height="24"/>
                                                             <state key="normal" image="К "/>
                                                         </button>
                                                     </subviews>
                                                     <color key="backgroundColor" systemColor="tertiarySystemFillColor"/>
+                                                    <constraints>
+                                                        <constraint firstItem="F75-ST-I5G" firstAttribute="leading" secondItem="f7D-WB-rXr" secondAttribute="leading" constant="94" id="097-oe-8Gn"/>
+                                                        <constraint firstItem="gEM-FX-5kn" firstAttribute="top" secondItem="f7D-WB-rXr" secondAttribute="top" constant="8" id="2lx-3H-sa2"/>
+                                                        <constraint firstItem="xo6-HM-bWi" firstAttribute="top" secondItem="2mX-bT-EvY" secondAttribute="bottom" constant="8" symbolic="YES" id="5nT-zN-oOY"/>
+                                                        <constraint firstItem="1RX-Ex-s3v" firstAttribute="top" secondItem="wQn-2A-5H8" secondAttribute="bottom" constant="11" id="64I-Lo-RFH"/>
+                                                        <constraint firstItem="xo6-HM-bWi" firstAttribute="leading" secondItem="wQn-2A-5H8" secondAttribute="trailing" constant="55" id="6fF-uz-hz5"/>
+                                                        <constraint firstItem="2hk-be-CIv" firstAttribute="leading" secondItem="1RX-Ex-s3v" secondAttribute="trailing" constant="51" id="8Fz-td-6dp"/>
+                                                        <constraint firstItem="uYX-Ya-rh8" firstAttribute="leading" secondItem="F75-ST-I5G" secondAttribute="trailing" constant="168" id="HKS-ov-0rN"/>
+                                                        <constraint firstItem="wQn-2A-5H8" firstAttribute="top" secondItem="f7D-WB-rXr" secondAttribute="top" constant="38" id="MMQ-bu-A2z"/>
+                                                        <constraint firstItem="xo6-HM-bWi" firstAttribute="top" secondItem="gEM-FX-5kn" secondAttribute="bottom" constant="9" id="Qam-Jj-8tF"/>
+                                                        <constraint firstItem="wQn-2A-5H8" firstAttribute="leading" secondItem="f7D-WB-rXr" secondAttribute="leading" constant="10" id="Uqb-nU-e9y"/>
+                                                        <constraint firstAttribute="trailing" secondItem="uYX-Ya-rh8" secondAttribute="trailing" constant="4" id="V3f-p0-Qge"/>
+                                                        <constraint firstItem="2hk-be-CIv" firstAttribute="top" secondItem="xo6-HM-bWi" secondAttribute="bottom" constant="8" symbolic="YES" id="VmE-Lb-mld"/>
+                                                        <constraint firstItem="1RX-Ex-s3v" firstAttribute="leading" secondItem="f7D-WB-rXr" secondAttribute="leading" constant="10" id="Yoo-qC-8kw"/>
+                                                        <constraint firstItem="2mX-bT-EvY" firstAttribute="leading" secondItem="gEM-FX-5kn" secondAttribute="trailing" constant="38" id="afv-OP-Nla"/>
+                                                        <constraint firstItem="F75-ST-I5G" firstAttribute="top" secondItem="2hk-be-CIv" secondAttribute="bottom" constant="10" id="dW9-Jr-Viu"/>
+                                                        <constraint firstAttribute="bottom" secondItem="uYX-Ya-rh8" secondAttribute="bottom" constant="51" id="gY0-fd-4oE"/>
+                                                        <constraint firstItem="gEM-FX-5kn" firstAttribute="leading" secondItem="f7D-WB-rXr" secondAttribute="leading" constant="105" id="jkG-AN-urA"/>
+                                                        <constraint firstItem="uYX-Ya-rh8" firstAttribute="leading" secondItem="2hk-be-CIv" secondAttribute="trailing" constant="220" id="t1f-Pz-lOo"/>
+                                                        <constraint firstAttribute="trailing" secondItem="xo6-HM-bWi" secondAttribute="trailing" constant="69" id="upL-Kf-5r7"/>
+                                                    </constraints>
                                                 </view>
                                             </subviews>
                                             <constraints>
