@@ -8,6 +8,7 @@
 
 import Foundation
 import ObjectMapper
+import MapKit
 
 class MapModel: Mappable {
 
@@ -20,7 +21,17 @@ class MapModel: Mappable {
     }
 }
 
-class Markers: Mappable {
+class Markers: NSObject,  Mappable, MKAnnotation {
+    var coordinate: CLLocationCoordinate2D {
+        get {
+            let coor = CLLocationCoordinate2D()
+            if let latitude = location?.lat, let longitude = location?.lng{
+                return CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+            }
+            return coor
+        }
+    }
+    
 
     var tag: String?
     var address: String?
@@ -32,6 +43,8 @@ class Markers: Mappable {
 
     required init?(map: Map) {}
 
+    override init() {}
+    
     func mapping(map: Map) {
         tag <- map["tag"]
         address <- map["address"]

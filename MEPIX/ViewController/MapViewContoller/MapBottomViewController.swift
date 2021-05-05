@@ -12,7 +12,11 @@ class MapBottomViewController: UIViewController {
     
     let networkManager = NetworkManager.shared
     
-    var markers: [Markers] = []
+    var markers: [Markers] = []{
+        didSet{
+            tableView.reloadData()
+        }
+    }
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -24,7 +28,6 @@ class MapBottomViewController: UIViewController {
         super.viewDidLoad()
 
         setNames()
-        getMarkers()
         
         tableView.dataSource = self
         tableView.delegate = self
@@ -39,16 +42,6 @@ class MapBottomViewController: UIViewController {
         }
     }
     
-    func getMarkers() {
-        networkManager.request { [weak self] (resp, error) in
-            guard let self = self else {return}
-//            guard let error = error else {print("не получилось "); return}
-            if let mapmodel = resp, let items = mapmodel.markers {
-                self.markers = items
-                self.tableView.reloadData()
-            }
-        }
-    }
 
 }
 
