@@ -221,11 +221,6 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HiA-b5-yd5">
-                                                        <rect key="frame" x="8" y="268" width="398" height="144"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <color key="backgroundColor" systemColor="systemPurpleColor"/>
-                                                    </view>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
@@ -397,11 +392,11 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="JvD-hm-MbK" customClass="MapViewController" customModule="MPEIX" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Lws-la-EOr">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="9Wd-ZE-2W2">
-                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="759"/>
                             </mapView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="K3W-wb-7Ue"/>
@@ -427,11 +422,11 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="MH3-vw-qAH" customClass="RaspisViewController" customModule="MPEIX" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JBY-D1-02W">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="IDo-aV-iEm">
-                                <rect key="frame" x="10" y="60" width="394" height="64"/>
+                                <rect key="frame" x="10" y="16" width="394" height="64"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e6o-3m-gkZ">
                                         <rect key="frame" x="0.0" y="0.0" width="44" height="64"/>
@@ -507,7 +502,7 @@
                                 </subviews>
                             </stackView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kO1-v5-p2w">
-                                <rect key="frame" x="0.0" y="149" width="414" height="664"/>
+                                <rect key="frame" x="0.0" y="105" width="414" height="654"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="141" id="A3Q-Co-MqM">
@@ -617,6 +612,16 @@
                     <tabBarItem key="tabBarItem" title="" image="map-1" id="2H1-zf-NbY">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="end" destination="1RX-Ex-s3v" id="kZK-nK-Hi3"/>
+                        <outlet property="name" destination="xo6-HM-bWi" id="Sf9-aC-Nhd"/>
+                        <outlet property="number" destination="gEM-FX-5kn" id="jfv-RW-xoa"/>
+                        <outlet property="person" destination="F75-ST-I5G" id="d6l-gz-Mj9"/>
+                        <outlet property="place" destination="2hk-be-CIv" id="2hr-3J-zHw"/>
+                        <outlet property="raspisView" destination="kO1-v5-p2w" id="MVx-VE-XgJ"/>
+                        <outlet property="rawType" destination="2mX-bT-EvY" id="awF-eG-bo8"/>
+                        <outlet property="start" destination="wQn-2A-5H8" id="MT1-NC-I5t"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C0J-Ef-8lc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -737,9 +742,6 @@
         </systemColor>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemPurpleColor">
-            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tertiarySystemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
