@@ -9,23 +9,15 @@
 import UIKit
 
 class RaspisViewController: UIViewController {
-
-    @IBOutlet weak var Date: UICollectionView!
-    
-    @IBOutlet weak var Raspisanie: UICollectionView!
+    let networkManager = NetworkManager.shared
     
     
-    var date:Weeks!
-    var selectedDate:Weeks?{
-        didSet{
-            if let dateS = self.selectedDate{
-                self.title = dateS.firstDayOfWeek
-            }
-        }
-    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
+    
+    
 }
+
