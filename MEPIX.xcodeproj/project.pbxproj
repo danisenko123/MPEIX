@@ -16,7 +16,7 @@
 		30A034E023FFBBC5005C5AA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30A034DF23FFBBC5005C5AA9 /* Assets.xcassets */; };
 		30A034E323FFBBC5005C5AA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30A034E123FFBBC5005C5AA9 /* LaunchScreen.storyboard */; };
 		30AC31F2256BF18E00EF8475 /* GroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AC31F1256BF18E00EF8475 /* GroupViewController.swift */; };
-		30AFDE232643096E0035AF4D /* RapisanieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AFDE222643096E0035AF4D /* RapisanieCell.swift */; };
+		30AFDE4F264400B50035AF4D /* RaspisCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AFDE4E264400B50035AF4D /* RaspisCell.swift */; };
 		30B19F84240DA3DB00BD1F97 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 30B19F82240DA3DB00BD1F97 /* Info.plist */; };
 		30B7766D240E6810007BA2F1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 30B7766C240E6810007BA2F1 /* GoogleService-Info.plist */; };
 		30BF3BB3240E729100A7B2C6 /* MEPIXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B19F81240DA3DB00BD1F97 /* MEPIXTests.swift */; };
@@ -78,7 +78,7 @@
 		30A034E923FFBBC5005C5AA9 /* MEPIXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MEPIXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		30A034F423FFBBC6005C5AA9 /* MEPIXUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MEPIXUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		30AC31F1256BF18E00EF8475 /* GroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupViewController.swift; sourceTree = "<group>"; };
-		30AFDE222643096E0035AF4D /* RapisanieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RapisanieCell.swift; sourceTree = "<group>"; };
+		30AFDE4E264400B50035AF4D /* RaspisCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaspisCell.swift; sourceTree = "<group>"; };
 		30B19F7C240DA3CA00BD1F97 /* MEPIXUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MEPIXUITests.swift; sourceTree = "<group>"; };
 		30B19F7D240DA3CA00BD1F97 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30B19F81240DA3DB00BD1F97 /* MEPIXTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MEPIXTests.swift; sourceTree = "<group>"; };
@@ -162,7 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				301E85D625949E4100C1D7E3 /* RaspisViewController.swift */,
-				30AFDE222643096E0035AF4D /* RapisanieCell.swift */,
+				30AFDE4E264400B50035AF4D /* RaspisCell.swift */,
 			);
 			path = RaspisViewController;
 			sourceTree = "<group>";
@@ -445,6 +445,7 @@
 				F20214FA2631CD1F00919125 /* NetworkManager.swift in Sources */,
 				F204DAA72639C14B002B2778 /* MapBottomViewController.swift in Sources */,
 				30A034D923FFBBC5005C5AA9 /* SceneDelegate.swift in Sources */,
+				30AFDE4F264400B50035AF4D /* RaspisCell.swift in Sources */,
 				F204DA9D2639C129002B2778 /* MapViewController.swift in Sources */,
 				301E85D725949E4100C1D7E3 /* RaspisViewController.swift in Sources */,
 				30AC31F2256BF18E00EF8475 /* GroupViewController.swift in Sources */,

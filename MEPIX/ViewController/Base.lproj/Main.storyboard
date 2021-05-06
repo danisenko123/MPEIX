@@ -396,7 +396,7 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="aXN-SQ-lWs" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7hi-ut-9aX">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Анонимный Пользователь" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CLc-ag-RRi">
@@ -457,11 +457,11 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="JvD-hm-MbK" customClass="MapViewController" customModule="MPEIX" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Lws-la-EOr">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="9Wd-ZE-2W2">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="759"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                             </mapView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="K3W-wb-7Ue"/>
@@ -570,15 +570,15 @@
                                 <rect key="frame" x="0.0" y="149" width="414" height="664"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="141" id="A3Q-Co-MqM">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="141"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Raspis" rowHeight="115" id="A3Q-Co-MqM" customClass="RaspisCell" customModule="MPEIX" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="115"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="A3Q-Co-MqM" id="vg5-xi-Qza">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="141"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="115"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f7D-WB-rXr">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="141"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="115"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9:20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wQn-2A-5H8">
                                                             <rect key="frame" x="10" y="38" width="31" height="19"/>
@@ -623,7 +623,7 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uYX-Ya-rh8">
-                                                            <rect key="frame" x="352.5" y="66" width="57.5" height="24"/>
+                                                            <rect key="frame" x="352.5" y="40" width="57.5" height="24"/>
                                                             <state key="normal" image="К "/>
                                                         </button>
                                                     </subviews>
@@ -658,6 +658,15 @@
                                                 <constraint firstItem="f7D-WB-rXr" firstAttribute="top" secondItem="vg5-xi-Qza" secondAttribute="top" id="ZR1-s8-Z8J"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="end" destination="1RX-Ex-s3v" id="ezu-e9-UyP"/>
+                                            <outlet property="name" destination="xo6-HM-bWi" id="kxa-wX-GhQ"/>
+                                            <outlet property="number" destination="gEM-FX-5kn" id="eJg-iG-LhM"/>
+                                            <outlet property="person" destination="F75-ST-I5G" id="agE-fa-Gpf"/>
+                                            <outlet property="place" destination="2hk-be-CIv" id="lSA-xA-LN7"/>
+                                            <outlet property="rawType" destination="2mX-bT-EvY" id="u3u-dM-eel"/>
+                                            <outlet property="start" destination="wQn-2A-5H8" id="ZaP-4o-ht6"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -677,6 +686,9 @@
                     <tabBarItem key="tabBarItem" title="" image="map-1" id="2H1-zf-NbY">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
                     </tabBarItem>
+                    <connections>
+                        <outlet property="raspistab" destination="kO1-v5-p2w" id="PcV-vs-OS2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C0J-Ef-8lc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

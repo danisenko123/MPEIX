@@ -59,26 +59,4 @@ class NetworkManager {
     }
     
     
-    func request(className: String, completion: @escaping (_ data: Classes?, _ error: Error?) -> Void)  {
-        let url =  "https://api.kekmech.com/mpeix/schedule/v1/group/\(className)/schedule/1"
-        if let urlString = url.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed){
-        AF.request(urlString)
-            .validate(statusCode: 200..<300)
-            .responseJSON { (respons) in
-                switch respons.result {
-                case .success(let data):
-                    if let group = Classes(JSON: data as! [String : Any]){
-                        //print(group.name)
-                        completion(group, nil)
-                    }
-                case .failure(let error):
-                    //print(error)
-                    completion(nil, error)
-                }
-            }
-        }
-            
-        
-    }
-    
 }
