@@ -18,4 +18,16 @@ class RaspisCell: UITableViewCell {
     @IBOutlet weak var place: UILabel!
     @IBOutlet weak var rawType: UILabel!
     @IBOutlet weak var number: UILabel!
+    
+    // функция для лейбов и передачи данных в ячейку
+    func setClass(classes:Classes) {
+        name.text = classes.name
+        person.text = classes.person
+        rawType.text = classes.rawType
+        place.text = classes.place
+        
+        
+        
+        
+    }
 }

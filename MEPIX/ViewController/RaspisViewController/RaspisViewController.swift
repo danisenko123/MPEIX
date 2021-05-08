@@ -9,6 +9,7 @@
 import UIKit
 
 class RaspisViewController: UIViewController {
+    
     let networkManager = NetworkManager.shared
     
     @IBOutlet weak var raspistab: UITableView!
@@ -46,13 +47,10 @@ extension RaspisViewController: UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Raspis", for: indexPath)
-        let classec: Classes = self.raspis[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Raspis", for: indexPath) as! RaspisCell
+        let classes: Classes = self.raspis[indexPath.row]
         
-        cell.textLabel?.text = classec.name
-        cell.textLabel?.text = classec.person
-        cell.textLabel?.text = classec.rawType
-        cell.textLabel?.text = classec.place
+        cell.setClass(classes: classes)
         return cell
         
        
