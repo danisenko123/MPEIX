@@ -43,6 +43,9 @@
 		F2F1D6CF2639CC9C00C34E99 /* MapModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F1D6CE2639CC9C00C34E99 /* MapModel.swift */; };
 		F2F1D6D02639CC9C00C34E99 /* MapModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F1D6CE2639CC9C00C34E99 /* MapModel.swift */; };
 		F2F1D6D12639CC9C00C34E99 /* MapModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F1D6CE2639CC9C00C34E99 /* MapModel.swift */; };
+		F2F8DB07264AF5FB00716317 /* TypeMarkers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F8DB06264AF5FB00716317 /* TypeMarkers.swift */; };
+		F2F8DB08264AF5FB00716317 /* TypeMarkers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F8DB06264AF5FB00716317 /* TypeMarkers.swift */; };
+		F2F8DB09264AF5FB00716317 /* TypeMarkers.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2F8DB06264AF5FB00716317 /* TypeMarkers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +96,7 @@
 		F2BE034226275EF800921318 /* GroupModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupModel.swift; sourceTree = "<group>"; };
 		F2BE034F2627647200921318 /* TableViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TableViewCell+Extension.swift"; sourceTree = "<group>"; };
 		F2F1D6CE2639CC9C00C34E99 /* MapModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapModel.swift; sourceTree = "<group>"; };
+		F2F8DB06264AF5FB00716317 /* TypeMarkers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeMarkers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -206,6 +210,7 @@
 				F204DA9C2639C129002B2778 /* MapViewController.swift */,
 				F204DAA62639C14B002B2778 /* MapBottomViewController.swift */,
 				F2443AD52642BE8C001F0B2E /* MapManagers.swift */,
+				F2F8DB06264AF5FB00716317 /* TypeMarkers.swift */,
 			);
 			path = MapViewContoller;
 			sourceTree = "<group>";
@@ -428,6 +433,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2F1D6CF2639CC9C00C34E99 /* MapModel.swift in Sources */,
+				F2F8DB07264AF5FB00716317 /* TypeMarkers.swift in Sources */,
 				F2443AD62642BE8C001F0B2E /* MapManagers.swift in Sources */,
 				30FD0429260782DC00392AD3 /* DashboardViewController.swift in Sources */,
 				30A034D723FFBBC4005C5AA9 /* AppDelegate.swift in Sources */,
@@ -451,6 +457,7 @@
 				F204DAA82639C14B002B2778 /* MapBottomViewController.swift in Sources */,
 				F20214FB2631CD1F00919125 /* NetworkManager.swift in Sources */,
 				F2BE03512627647200921318 /* TableViewCell+Extension.swift in Sources */,
+				F2F8DB08264AF5FB00716317 /* TypeMarkers.swift in Sources */,
 				30BF3BB3240E729100A7B2C6 /* MEPIXTests.swift in Sources */,
 				F2F1D6D02639CC9C00C34E99 /* MapModel.swift in Sources */,
 				F204DA9E2639C129002B2778 /* MapViewController.swift in Sources */,
@@ -466,6 +473,7 @@
 				F204DAA92639C14B002B2778 /* MapBottomViewController.swift in Sources */,
 				F20214FC2631CD1F00919125 /* NetworkManager.swift in Sources */,
 				F2BE03522627647200921318 /* TableViewCell+Extension.swift in Sources */,
+				F2F8DB09264AF5FB00716317 /* TypeMarkers.swift in Sources */,
 				30BF3BB4240E72A200A7B2C6 /* MEPIXUITests.swift in Sources */,
 				F2F1D6D12639CC9C00C34E99 /* MapModel.swift in Sources */,
 				F204DA9F2639C129002B2778 /* MapViewController.swift in Sources */,

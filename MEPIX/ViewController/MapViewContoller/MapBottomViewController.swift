@@ -12,12 +12,11 @@ class MapBottomViewController: UIViewController {
     
     let manager = MapManager.shared
 
-    
     @IBOutlet weak var tableView: UITableView!
     
     @IBOutlet var buttons: [UIButton]!
     
-    var arrName = ["food","buildings","dorms","place","departments"]
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,33 +31,44 @@ class MapBottomViewController: UIViewController {
 
     func setNames(){
         for (index, button) in buttons.enumerated(){
-            button.setImage(UIImage(named: arrName[index]), for: .normal)
-
+            let type = self.manager.getNameImage(index: index)
+            let action = UIAction { _ in
+                print("PROHLO")
+                self.manager.filterMarkers(type: type )
+                self.tableView.reloadData()
+            }
+            button.setImage(UIImage(named: type), for: .normal)
+            button.addAction(action, for: .touchUpInside)
+            
         }
     }
-    
+        
 
+    @IBAction func buttons(_ sender: UIButton) {
+            
+        }
+//        tableView.reloadData()
+    
+    
+    
 }
+
+
 
 extension MapBottomViewController: UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        manager.markers.count
+        manager.filterMarkers.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        let marker = manager.markers[indexPath.row]
-        
+        let marker = manager.filterMarkers[indexPath.row]
         let cell = UITableViewCell()
         var content = cell.defaultContentConfiguration()
-        
         content.text = marker.name
         content.secondaryText = marker.address
-        
         cell.contentConfiguration = content
         
         return cell
-        
     }
     
     

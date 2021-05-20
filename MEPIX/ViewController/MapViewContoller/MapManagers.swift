@@ -13,10 +13,10 @@ class MapManager {
     static let shared = MapManager()
     
     let networkManager = NetworkManager.shared
-
     
     var markers: [Markers] = []
-
+    
+    var filterMarkers: [Markers] = []
     
     //MARK:- Network
     func getMarkers(complition: ( () -> Void )? = nil ) {
@@ -25,10 +25,16 @@ class MapManager {
 //            guard let error = error else {print("не получилось "); return}
             if let mapmodel = resp, let items = mapmodel.markers {
                 self.markers = items
+//                self.filterMarkers = self.markers
                 complition?()
             }
         }
     }
 
-    
+    func getNameImage(index: Int) -> String {
+        return TypeMarkers.allCases[index].rawValue
+    }
+    func filterMarkers(type: String) {
+        filterMarkers = markers.filter{ $0.type?.rawValue == type }
+    }
 }

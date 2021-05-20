@@ -21,7 +21,7 @@ class MapModel: Mappable {
     }
 }
 
-class Markers: NSObject,  Mappable, MKAnnotation {
+class Markers: NSObject, Mappable, MKAnnotation {
     var coordinate: CLLocationCoordinate2D {
         get {
             let coor = CLLocationCoordinate2D()
@@ -32,10 +32,9 @@ class Markers: NSObject,  Mappable, MKAnnotation {
         }
     }
     
-
     var tag: String?
     var address: String?
-    var type: String?
+    var type: TypeMarkers?
     var name: String?
     var icon: String?
     var location: Location?

@@ -336,7 +336,7 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="aXN-SQ-lWs" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7hi-ut-9aX">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Анонимный Пользователь" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CLc-ag-RRi">
@@ -397,11 +397,11 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="JvD-hm-MbK" customClass="MapViewController" customModule="MPEIX" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Lws-la-EOr">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="9Wd-ZE-2W2">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="759"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
                             </mapView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="K3W-wb-7Ue"/>
@@ -427,11 +427,11 @@
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="MH3-vw-qAH" customClass="RaspisViewController" customModule="MPEIX" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="JBY-D1-02W">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="IDo-aV-iEm">
-                                <rect key="frame" x="10" y="16" width="394" height="64"/>
+                                <rect key="frame" x="10" y="60" width="394" height="64"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e6o-3m-gkZ">
                                         <rect key="frame" x="0.0" y="0.0" width="44" height="64"/>
@@ -507,7 +507,7 @@
                                 </subviews>
                             </stackView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kO1-v5-p2w">
-                                <rect key="frame" x="0.0" y="105" width="414" height="654"/>
+                                <rect key="frame" x="0.0" y="149" width="414" height="664"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="141" id="A3Q-Co-MqM">
@@ -654,6 +654,9 @@
                                             <constraint firstAttribute="width" constant="48" id="WIQ-hT-Pq6"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="buttons:" destination="JLf-Vg-Lqd" eventType="touchUpInside" id="IDa-B5-cb8"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mQv-aN-KT6">
                                         <rect key="frame" x="83.5" y="0.0" width="48" height="48"/>
@@ -662,6 +665,9 @@
                                             <constraint firstAttribute="height" constant="48" id="XII-vd-10E"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="buttons:" destination="JLf-Vg-Lqd" eventType="touchUpInside" id="kIS-qI-LtB"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nea-TQ-wwC">
                                         <rect key="frame" x="167" y="0.0" width="48" height="48"/>
@@ -670,6 +676,9 @@
                                             <constraint firstAttribute="width" constant="48" id="VdH-qe-afz"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="buttons:" destination="JLf-Vg-Lqd" eventType="touchUpInside" id="xVk-hO-Doc"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qIW-1I-5o4">
                                         <rect key="frame" x="250.5" y="0.0" width="48" height="48"/>
@@ -678,6 +687,9 @@
                                             <constraint firstAttribute="width" constant="48" id="Rj6-FS-3b0"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="buttons:" destination="JLf-Vg-Lqd" eventType="touchUpInside" id="7p1-Bx-giH"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KlP-o7-QH8">
                                         <rect key="frame" x="334" y="0.0" width="48" height="48"/>
@@ -686,6 +698,9 @@
                                             <constraint firstAttribute="width" constant="48" id="XV0-en-VhN"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="buttons:" destination="JLf-Vg-Lqd" eventType="touchUpInside" id="g6R-fm-9Hm"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
