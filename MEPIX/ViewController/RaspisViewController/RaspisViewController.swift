@@ -10,7 +10,8 @@ import UIKit
 
 class RaspisViewController: UIViewController {
     
-    
+    //MARK: - IBOutlet
+
     @IBOutlet weak var collectionView: UICollectionView!
     
     @IBOutlet weak var tableView: UITableView!
@@ -18,10 +19,11 @@ class RaspisViewController: UIViewController {
     let networkManager = NetworkManager.shared
     
     var item: Group?
-    
     var grupe = "ИЭС-165Б-17"
     
     
+    //MARK: - LiveCycle
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -29,17 +31,13 @@ class RaspisViewController: UIViewController {
         
         self.tableView.dataSource = self
         
-        
         networkManager.request(groupName: grupe) { (resp, erro) in
             if let resp = resp{
                 self.item = resp
                 self.tableView.reloadData()
             }
         }
-        
     }
-    
-    
     
 }
 
@@ -47,7 +45,6 @@ class RaspisViewController: UIViewController {
 //MARK: - UITableView
 extension RaspisViewController: UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
         return getClasses(item: item).count
     }
     
