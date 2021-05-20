@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3011D83E2653A3B10080FADC /* RaspisCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3011D83C2653A3B10080FADC /* RaspisCell.swift */; };
+		3011D83F2653A3B10080FADC /* RaspisCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3011D83D2653A3B10080FADC /* RaspisCell.xib */; };
+		3011D8452653E3300080FADC /* RasspisanieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3011D8432653E3300080FADC /* RasspisanieCell.swift */; };
+		3011D8462653E3300080FADC /* RasspisanieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3011D8442653E3300080FADC /* RasspisanieCell.xib */; };
+		3011D84C2653ED9C0080FADC /* DateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3011D84A2653ED9C0080FADC /* DateCell.swift */; };
+		3011D84D2653ED9C0080FADC /* DateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3011D84B2653ED9C0080FADC /* DateCell.xib */; };
 		301E85D725949E4100C1D7E3 /* RaspisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301E85D625949E4100C1D7E3 /* RaspisViewController.swift */; };
 		3054ACCE24449D2000648597 /* Roboto Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3054ACCD24449D2000648597 /* Roboto Light.ttf */; };
 		3067ECB72559DAB80015583C /*  OnboardingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3067ECB62559DAB80015583C /*  OnboardingController.swift */; };
@@ -16,7 +22,6 @@
 		30A034E023FFBBC5005C5AA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30A034DF23FFBBC5005C5AA9 /* Assets.xcassets */; };
 		30A034E323FFBBC5005C5AA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30A034E123FFBBC5005C5AA9 /* LaunchScreen.storyboard */; };
 		30AC31F2256BF18E00EF8475 /* GroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AC31F1256BF18E00EF8475 /* GroupViewController.swift */; };
-		30AFDE4F264400B50035AF4D /* RaspisCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AFDE4E264400B50035AF4D /* RaspisCell.swift */; };
 		30B19F84240DA3DB00BD1F97 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 30B19F82240DA3DB00BD1F97 /* Info.plist */; };
 		30B7766D240E6810007BA2F1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 30B7766C240E6810007BA2F1 /* GoogleService-Info.plist */; };
 		30BF3BB3240E729100A7B2C6 /* MEPIXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B19F81240DA3DB00BD1F97 /* MEPIXTests.swift */; };
@@ -65,6 +70,12 @@
 
 /* Begin PBXFileReference section */
 		055AE819B791BD1AFD805274 /* Pods-MEPIX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MEPIX.release.xcconfig"; path = "Pods/Target Support Files/Pods-MEPIX/Pods-MEPIX.release.xcconfig"; sourceTree = "<group>"; };
+		3011D83C2653A3B10080FADC /* RaspisCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaspisCell.swift; sourceTree = "<group>"; };
+		3011D83D2653A3B10080FADC /* RaspisCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RaspisCell.xib; sourceTree = "<group>"; };
+		3011D8432653E3300080FADC /* RasspisanieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RasspisanieCell.swift; sourceTree = "<group>"; };
+		3011D8442653E3300080FADC /* RasspisanieCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RasspisanieCell.xib; sourceTree = "<group>"; };
+		3011D84A2653ED9C0080FADC /* DateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCell.swift; sourceTree = "<group>"; };
+		3011D84B2653ED9C0080FADC /* DateCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DateCell.xib; sourceTree = "<group>"; };
 		301E85D625949E4100C1D7E3 /* RaspisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaspisViewController.swift; sourceTree = "<group>"; };
 		3054ACCD24449D2000648597 /* Roboto Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto Light.ttf"; sourceTree = "<group>"; };
 		3067ECB62559DAB80015583C /*  OnboardingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " OnboardingController.swift"; sourceTree = "<group>"; };
@@ -78,7 +89,6 @@
 		30A034E923FFBBC5005C5AA9 /* MEPIXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MEPIXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		30A034F423FFBBC6005C5AA9 /* MEPIXUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MEPIXUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		30AC31F1256BF18E00EF8475 /* GroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupViewController.swift; sourceTree = "<group>"; };
-		30AFDE4E264400B50035AF4D /* RaspisCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaspisCell.swift; sourceTree = "<group>"; };
 		30B19F7C240DA3CA00BD1F97 /* MEPIXUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MEPIXUITests.swift; sourceTree = "<group>"; };
 		30B19F7D240DA3CA00BD1F97 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30B19F81240DA3DB00BD1F97 /* MEPIXTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MEPIXTests.swift; sourceTree = "<group>"; };
@@ -162,7 +172,12 @@
 			isa = PBXGroup;
 			children = (
 				301E85D625949E4100C1D7E3 /* RaspisViewController.swift */,
-				30AFDE4E264400B50035AF4D /* RaspisCell.swift */,
+				3011D83C2653A3B10080FADC /* RaspisCell.swift */,
+				3011D83D2653A3B10080FADC /* RaspisCell.xib */,
+				3011D8432653E3300080FADC /* RasspisanieCell.swift */,
+				3011D8442653E3300080FADC /* RasspisanieCell.xib */,
+				3011D84A2653ED9C0080FADC /* DateCell.swift */,
+				3011D84B2653ED9C0080FADC /* DateCell.xib */,
 			);
 			path = RaspisViewController;
 			sourceTree = "<group>";
@@ -370,9 +385,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3011D84D2653ED9C0080FADC /* DateCell.xib in Resources */,
 				30A034E323FFBBC5005C5AA9 /* LaunchScreen.storyboard in Resources */,
 				30A034E023FFBBC5005C5AA9 /* Assets.xcassets in Resources */,
 				30A034DE23FFBBC5005C5AA9 /* Main.storyboard in Resources */,
+				3011D83F2653A3B10080FADC /* RaspisCell.xib in Resources */,
+				3011D8462653E3300080FADC /* RasspisanieCell.xib in Resources */,
 				30B7766D240E6810007BA2F1 /* GoogleService-Info.plist in Resources */,
 				3054ACCE24449D2000648597 /* Roboto Light.ttf in Resources */,
 			);
@@ -445,10 +463,12 @@
 				F20214FA2631CD1F00919125 /* NetworkManager.swift in Sources */,
 				F204DAA72639C14B002B2778 /* MapBottomViewController.swift in Sources */,
 				30A034D923FFBBC5005C5AA9 /* SceneDelegate.swift in Sources */,
-				30AFDE4F264400B50035AF4D /* RaspisCell.swift in Sources */,
+				3011D83E2653A3B10080FADC /* RaspisCell.swift in Sources */,
 				F204DA9D2639C129002B2778 /* MapViewController.swift in Sources */,
 				301E85D725949E4100C1D7E3 /* RaspisViewController.swift in Sources */,
+				3011D8452653E3300080FADC /* RasspisanieCell.swift in Sources */,
 				30AC31F2256BF18E00EF8475 /* GroupViewController.swift in Sources */,
+				3011D84C2653ED9C0080FADC /* DateCell.swift in Sources */,
 				F2BE03502627647200921318 /* TableViewCell+Extension.swift in Sources */,
 				F2BE034326275EF800921318 /* GroupModel.swift in Sources */,
 				3067ECB72559DAB80015583C /*  OnboardingController.swift in Sources */,

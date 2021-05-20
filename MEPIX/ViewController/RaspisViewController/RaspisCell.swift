@@ -2,7 +2,7 @@
 //  RaspisCell.swift
 //  MEPIX
 //
-//  Created by Дима Анисенко on 06.05.2021.
+//  Created by Дима Анисенко on 18.05.2021.
 //  Copyright © 2021 Дима Анисенко. All rights reserved.
 //
 
@@ -10,24 +10,27 @@ import UIKit
 
 class RaspisCell: UITableViewCell {
 
- 
     @IBOutlet weak var start: UILabel!
     @IBOutlet weak var end: UILabel!
-    @IBOutlet weak var name: UILabel!
     @IBOutlet weak var person: UILabel!
     @IBOutlet weak var place: UILabel!
-    @IBOutlet weak var rawType: UILabel!
+    @IBOutlet weak var name: UILabel!
     @IBOutlet weak var number: UILabel!
+    @IBOutlet weak var rawType: UILabel!
     
-    // функция для лейбов и передачи данных в ячейку
-    func setClass(classes:Classes) {
-        name.text = classes.name
-        person.text = classes.person
-        rawType.text = classes.rawType
-        place.text = classes.place
-        
-        
-        
-        
+    override func awakeFromNib() {
+        super.awakeFromNib()
+       
     }
+
+    func ClassesCell(classes:Classes){
+        self.name.text = classes.name
+        self.person.text = classes.person
+        self.place.text = classes.place
+        self.rawType.text = classes.rawType
+        self.number.text = "\(String(describing: classes.number))"
+        self.start.text = "\(String(describing: classes.time))"
+        self.end.text = "\(String(describing: classes.time))"
+    }
+    
 }
