@@ -9,68 +9,86 @@
 import UIKit
 
 class RaspisViewController: UIViewController {
-    @IBOutlet weak var date: UICollectionView!
-    @IBOutlet weak var raspisanie: UICollectionView!
+    
+    
+    @IBOutlet weak var collectionView: UICollectionView!
+    
+    @IBOutlet weak var tableView: UITableView!
+    
     let networkManager = NetworkManager.shared
     
-    var raspis: [Classes] = []
-   
+    var item: Group?
     
     var grupe = "ИЭС-165Б-17"
     
-    var selectedGroup: Days?{
-        didSet{
-            if let days = self.selectedGroup{
-                self.title = days.date
-            }
-        }
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-            networkManager.request(groupName: grupe) { (resp, erro) in
-                if let resp = resp{
-                    if let week = resp.weeks {
-                        if let day = week.first?.days{
-                            if let classes = day.first?.classes{
-                                self.raspis = classes
-                            }
-                        }
-                    }
-                }
+        tableView.register(UINib(nibName: "RaspisCell", bundle: nil), forCellReuseIdentifier: "RaspisCell")
+        
+        self.tableView.dataSource = self
+        
+        
+        networkManager.request(groupName: grupe) { (resp, erro) in
+            if let resp = resp{
+                self.item = resp
+                self.tableView.reloadData()
             }
+        }
         
-        self.raspisanie.register(UINib(nibName: "RasspisanieCell",bundle: nil ), forCellWithReuseIdentifier: "RasspisanieCell")
-        self.raspisanie.dataSource = self
-        self.raspisanie.delegate = self
-        
-        self.date.register(UINib(nibName: "DateCell", bundle: nil), forCellWithReuseIdentifier: "DateCell")
-        self.date.dataSource = self
-        self.date.delegate = self
-        
-     
-        
-}
+    }
     
+    
+    
+}
 
+
+//MARK: - UITableView
+extension RaspisViewController: UITableViewDataSource{
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        return getClasses(item: item).count
+    }
     
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "RaspisCell") as! RaspisCell
+        
+        cell.ClassesCell(classes: getClasses(item: item)[indexPath.row] )
+        
+        return cell
+    }
     
     
 }
-extension RaspisViewController: UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout{
+
+//MARK: - UICollectionView
+
+extension RaspisViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        raspis.count
+        0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RasspisanieCell", for: indexPath) as! RasspisanieCell
-        let _: Classes = self.raspis[indexPath.row]
-            cell.setupCell(classes:raspis)
-          
-            return cell
+        UICollectionViewCell()
     }
     
+}
+
+//MARK: - доп методы
+extension RaspisViewController {
     
+    func getClasses(item: Group?) -> [Classes]{
+        var array: [Classes] = []
+        if let item = item {
+            let foo = item.weeks?.first?.days
+            foo?.forEach({ day in
+                day.classes?.forEach({ classes in
+                    array.append(classes)
+                })
+            })
+        }
+        
+        return array
+    }
 }

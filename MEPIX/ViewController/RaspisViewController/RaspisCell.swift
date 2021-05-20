@@ -20,17 +20,30 @@ class RaspisCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
-       
+
     }
 
-    func ClassesCell(classes:Classes){
-        self.name.text = classes.name
-        self.person.text = classes.person
-        self.place.text = classes.place
-        self.rawType.text = classes.rawType
-        self.number.text = "\(String(describing: classes.number))"
-        self.start.text = "\(String(describing: classes.time))"
-        self.end.text = "\(String(describing: classes.time))"
+    func ClassesCell(classes:Classes) {
+        person.text = classes.person
+        place.text = classes.place
+        rawType.text = classes.rawType
+        if let number = classes.number{
+            self.number.text = String(number)
+        }
+        if var start = classes.time?.start{
+            //если что это не серьездо
+            start.removeLast()
+            start.removeLast()
+            start.removeLast()
+            self.start.text = String(start)
+        }
+        if var end = classes.time?.end{
+            end.removeLast()
+            end.removeLast()
+            end.removeLast()
+            self.end.text = String(end)
+        }
+        name.text = classes.name
     }
     
 }

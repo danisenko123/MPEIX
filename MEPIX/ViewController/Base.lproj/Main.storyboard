@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9k5-pN-gOk">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9k5-pN-gOk">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -497,7 +497,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="hSx-k9-6Jf"/>
                                 </constraints>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="UIj-Eb-VLK">
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="UIj-Eb-VLK">
                                     <size key="itemSize" width="68" height="56"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -505,7 +505,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="YPr-s0-HCF">
-                                        <rect key="frame" x="0.0" y="0.0" width="68" height="56"/>
+                                        <rect key="frame" x="0.0" y="-3" width="68" height="56"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="roy-q6-f4i">
                                             <rect key="frame" x="0.0" y="0.0" width="68" height="56"/>
@@ -515,36 +515,30 @@
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="3Qv-AC-anj">
-                                <rect key="frame" x="0.0" y="58" width="414" height="701"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="iO2-xi-JTj">
+                                <rect key="frame" x="0.0" y="50" width="414" height="709"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gh0-J3-YrI">
-                                    <size key="itemSize" width="128" height="128"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                </collectionViewFlowLayout>
-                                <cells/>
-                            </collectionView>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="W8G-df-m6m"/>
                         <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="W8G-df-m6m" firstAttribute="trailing" secondItem="iO2-xi-JTj" secondAttribute="trailing" id="1Ar-gu-loW"/>
                             <constraint firstItem="WcX-bo-5DZ" firstAttribute="leading" secondItem="W8G-df-m6m" secondAttribute="leading" id="MUW-rA-p5P"/>
-                            <constraint firstItem="3Qv-AC-anj" firstAttribute="leading" secondItem="W8G-df-m6m" secondAttribute="leading" id="P5V-Bc-0Fi"/>
                             <constraint firstItem="W8G-df-m6m" firstAttribute="trailing" secondItem="WcX-bo-5DZ" secondAttribute="trailing" id="SLD-Ef-hPB"/>
-                            <constraint firstItem="W8G-df-m6m" firstAttribute="bottom" secondItem="3Qv-AC-anj" secondAttribute="bottom" id="YDx-ya-fn8"/>
-                            <constraint firstItem="3Qv-AC-anj" firstAttribute="top" secondItem="WcX-bo-5DZ" secondAttribute="bottom" constant="8" symbolic="YES" id="eT8-sL-eum"/>
+                            <constraint firstItem="W8G-df-m6m" firstAttribute="bottom" secondItem="iO2-xi-JTj" secondAttribute="bottom" id="SuP-Oe-Uxu"/>
+                            <constraint firstItem="iO2-xi-JTj" firstAttribute="leading" secondItem="W8G-df-m6m" secondAttribute="leading" id="VYK-rL-WKC"/>
+                            <constraint firstItem="iO2-xi-JTj" firstAttribute="top" secondItem="WcX-bo-5DZ" secondAttribute="bottom" id="dgo-PO-VLm"/>
                             <constraint firstItem="WcX-bo-5DZ" firstAttribute="top" secondItem="W8G-df-m6m" secondAttribute="top" id="okR-gN-YDs"/>
-                            <constraint firstItem="W8G-df-m6m" firstAttribute="trailing" secondItem="3Qv-AC-anj" secondAttribute="trailing" id="t7g-6n-YW8"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="map-1" id="2H1-zf-NbY">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
                     </tabBarItem>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <connections>
-                        <outlet property="date" destination="WcX-bo-5DZ" id="OmB-yq-EuR"/>
-                        <outlet property="raspisanie" destination="3Qv-AC-anj" id="HdK-Ni-Bbp"/>
+                        <outlet property="collectionView" destination="WcX-bo-5DZ" id="OmB-yq-EuR"/>
+                        <outlet property="tableView" destination="iO2-xi-JTj" id="aPA-P3-zWP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C0J-Ef-8lc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -564,7 +558,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MarkerСell" id="H6q-ub-yzB">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="H6q-ub-yzB" id="nHz-m5-vDK">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
