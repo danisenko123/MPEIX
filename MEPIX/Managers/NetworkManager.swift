@@ -14,7 +14,7 @@ class NetworkManager {
     static var shared = NetworkManager()
     
     func request(groupName: String, completion: @escaping (_ data: Group?, _ error: Error?) -> Void)  {
-        let url =  "https://api.kekmech.com/mpeix/schedule/v1/group/\(groupName)/schedule/1"
+        let url =  "https://api.kekmech.com/mpeix/schedule/v1/group/\(groupName)/schedule/0"
         if let urlString = url.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed){
             print(urlString)
         AF.request(urlString)

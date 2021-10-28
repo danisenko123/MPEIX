@@ -17,11 +17,15 @@ class GroupViewController: UIViewController {
 
     @IBOutlet weak var GroupTextField: UITextField!
     
-    
-    @IBOutlet weak var label1: UILabel!
-    @IBOutlet weak var label2: UILabel!
-    @IBOutlet weak var lable3: UILabel!
-    @IBOutlet weak var label4: UILabel!
+    @IBAction func ButtonViewRass(_ sender: Any) {
+     let storybord = UIStoryboard(name: "Main", bundle: nil)
+        if let vc2 = storybord.instantiateViewController(identifier: "TabBarController") as? TabBarController{
+            GroupManager.shared.group = GroupTextField.text
+            show(vc2, sender: nil)
+        }
+     
+         
+ }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,28 +34,28 @@ class GroupViewController: UIViewController {
     }
     
 
-    @IBAction func ButtonViewRass(_ sender: Any) {
-        
-        
-        // для такста работы менеджера
-        if let groupName = GroupTextField.text{
-            networkManager.request(groupName: groupName) { (resp, err) in
-                if let resp = resp{
-                self.label1.text = resp.name
-                self.label2.text = resp.weeks?.first?.firstDayOfWeek
-                self.lable3.text = resp.weeks?.first?.days?.first?.classes?.first?.name
-                self.label4.text = resp.weeks?.first?.days?.first?.classes?.first?.person
-                }
-                if err != nil {
-                    self.label1.text = "Такой группы нет"
-                    self.label2.text = nil
-                    self.lable3.text = nil
-                    self.label4.text = nil
-                }
-
-            }
-        }
-        
-    }
+ 
     
-}
+    
+    
+    // для такста работы менеджера
+        //if let groupName = GroupTextField.text{
+            //networkManager.request(groupName: groupName) { (resp, err) in
+                //if let resp = resp{
+                //self.label1.text = resp.name
+                //self.label2.text = resp.weeks?.first?.firstDayOfWeek
+                //self.lable3.text = resp.weeks?.first?.days?.first?.classes?.first?.name
+                //self.label4.text = resp.weeks?.first?.days?.first?.classes?.first?.person
+    
+    
+                //if err != nil {
+                    //self.label1.text = "Такой группы нет"
+                    //self.label2.text = nil
+                    //self.lable3.text = nil
+                    //self.label4.text = nil
+    }
+
+            
+        
+    
+

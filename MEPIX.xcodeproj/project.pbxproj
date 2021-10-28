@@ -11,11 +11,11 @@
 		3011D83F2653A3B10080FADC /* RaspisCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3011D83D2653A3B10080FADC /* RaspisCell.xib */; };
 		3011D8452653E3300080FADC /* RasspisanieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3011D8432653E3300080FADC /* RasspisanieCell.swift */; };
 		3011D8462653E3300080FADC /* RasspisanieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3011D8442653E3300080FADC /* RasspisanieCell.xib */; };
-		3011D84C2653ED9C0080FADC /* DateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3011D84A2653ED9C0080FADC /* DateCell.swift */; };
-		3011D84D2653ED9C0080FADC /* DateCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3011D84B2653ED9C0080FADC /* DateCell.xib */; };
 		301E85D725949E4100C1D7E3 /* RaspisViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301E85D625949E4100C1D7E3 /* RaspisViewController.swift */; };
 		3054ACCE24449D2000648597 /* Roboto Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3054ACCD24449D2000648597 /* Roboto Light.ttf */; };
 		3067ECB72559DAB80015583C /*  OnboardingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3067ECB62559DAB80015583C /*  OnboardingController.swift */; };
+		308CB49127039A8000254F1D /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308CB49027039A8000254F1D /* TabBarController.swift */; };
+		308CB49527039B8400254F1D /* GroupManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 308CB49427039B8400254F1D /* GroupManager.swift */; };
 		30A034D723FFBBC4005C5AA9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A034D623FFBBC4005C5AA9 /* AppDelegate.swift */; };
 		30A034D923FFBBC5005C5AA9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30A034D823FFBBC4005C5AA9 /* SceneDelegate.swift */; };
 		30A034DE23FFBBC5005C5AA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30A034DC23FFBBC5005C5AA9 /* Main.storyboard */; };
@@ -74,12 +74,12 @@
 		3011D83D2653A3B10080FADC /* RaspisCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RaspisCell.xib; sourceTree = "<group>"; };
 		3011D8432653E3300080FADC /* RasspisanieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RasspisanieCell.swift; sourceTree = "<group>"; };
 		3011D8442653E3300080FADC /* RasspisanieCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RasspisanieCell.xib; sourceTree = "<group>"; };
-		3011D84A2653ED9C0080FADC /* DateCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateCell.swift; sourceTree = "<group>"; };
-		3011D84B2653ED9C0080FADC /* DateCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DateCell.xib; sourceTree = "<group>"; };
 		301E85D625949E4100C1D7E3 /* RaspisViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaspisViewController.swift; sourceTree = "<group>"; };
 		3054ACCD24449D2000648597 /* Roboto Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto Light.ttf"; sourceTree = "<group>"; };
 		3067ECB62559DAB80015583C /*  OnboardingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " OnboardingController.swift"; sourceTree = "<group>"; };
 		308CAD32240D5B8700BC7098 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		308CB49027039A8000254F1D /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		308CB49427039B8400254F1D /* GroupManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupManager.swift; sourceTree = "<group>"; };
 		30A034D323FFBBC4005C5AA9 /* MPEIX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MPEIX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30A034D623FFBBC4005C5AA9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30A034D823FFBBC4005C5AA9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -133,6 +133,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		308CB496270E029E00254F1D /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				308CB49427039B8400254F1D /* GroupManager.swift */,
+			);
+			path = Singleton;
+			sourceTree = "<group>";
+		};
 		30A034CA23FFBBC4005C5AA9 = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +167,7 @@
 		30A034D523FFBBC4005C5AA9 /* MEPIX */ = {
 			isa = PBXGroup;
 			children = (
+				308CB496270E029E00254F1D /* Singleton */,
 				F2220C132624D30B009CCFEE /* Extensions */,
 				30CBBCE1257BC789008E568B /* Model */,
 				F2220C0B2624D1A9009CCFEE /* ViewController */,
@@ -176,8 +185,6 @@
 				3011D83D2653A3B10080FADC /* RaspisCell.xib */,
 				3011D8432653E3300080FADC /* RasspisanieCell.swift */,
 				3011D8442653E3300080FADC /* RasspisanieCell.xib */,
-				3011D84A2653ED9C0080FADC /* DateCell.swift */,
-				3011D84B2653ED9C0080FADC /* DateCell.xib */,
 			);
 			path = RaspisViewController;
 			sourceTree = "<group>";
@@ -242,6 +249,7 @@
 				30AFDE212643090A0035AF4D /* RaspisViewController */,
 				F204DA9B2639C107002B2778 /* MapViewContoller */,
 				30A034DC23FFBBC5005C5AA9 /* Main.storyboard */,
+				308CB49027039A8000254F1D /* TabBarController.swift */,
 				30A034E123FFBBC5005C5AA9 /* LaunchScreen.storyboard */,
 				3067ECB62559DAB80015583C /*  OnboardingController.swift */,
 				30AC31F1256BF18E00EF8475 /* GroupViewController.swift */,
@@ -385,7 +393,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3011D84D2653ED9C0080FADC /* DateCell.xib in Resources */,
 				30A034E323FFBBC5005C5AA9 /* LaunchScreen.storyboard in Resources */,
 				30A034E023FFBBC5005C5AA9 /* Assets.xcassets in Resources */,
 				30A034DE23FFBBC5005C5AA9 /* Main.storyboard in Resources */,
@@ -462,13 +469,14 @@
 				30A034D723FFBBC4005C5AA9 /* AppDelegate.swift in Sources */,
 				F20214FA2631CD1F00919125 /* NetworkManager.swift in Sources */,
 				F204DAA72639C14B002B2778 /* MapBottomViewController.swift in Sources */,
+				308CB49127039A8000254F1D /* TabBarController.swift in Sources */,
 				30A034D923FFBBC5005C5AA9 /* SceneDelegate.swift in Sources */,
 				3011D83E2653A3B10080FADC /* RaspisCell.swift in Sources */,
 				F204DA9D2639C129002B2778 /* MapViewController.swift in Sources */,
 				301E85D725949E4100C1D7E3 /* RaspisViewController.swift in Sources */,
+				308CB49527039B8400254F1D /* GroupManager.swift in Sources */,
 				3011D8452653E3300080FADC /* RasspisanieCell.swift in Sources */,
 				30AC31F2256BF18E00EF8475 /* GroupViewController.swift in Sources */,
-				3011D84C2653ED9C0080FADC /* DateCell.swift in Sources */,
 				F2BE03502627647200921318 /* TableViewCell+Extension.swift in Sources */,
 				F2BE034326275EF800921318 /* GroupModel.swift in Sources */,
 				3067ECB72559DAB80015583C /*  OnboardingController.swift in Sources */,

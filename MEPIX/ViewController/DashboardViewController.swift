@@ -10,10 +10,18 @@ import UIKit
 
 class DashboardViewController: UIViewController {
 
-
+    var networkManager = NetworkManager.shared
+    
+    
+    @IBOutlet weak var GroopLabel: UILabel!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        if let group = GroupManager.shared.group{
+            GroopLabel.text = group
+        }
+        
         
     }
     

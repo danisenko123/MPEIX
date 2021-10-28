@@ -14,7 +14,7 @@ class RasspisanieCell: UICollectionViewCell{
     let networkManager = NetworkManager.shared
     
     var raspis: [Classes] = []
-    var grupe = "ИЭС-165Б-17"
+    var grupe = "ИЭоз-60-17"
     override func awakeFromNib() {
         super.awakeFromNib()
         networkManager.request(groupName: grupe) { (resp, erro) in
