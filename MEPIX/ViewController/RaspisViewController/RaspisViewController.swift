@@ -12,9 +12,12 @@ class RaspisViewController: UIViewController {
     
     //MARK: - IBOutlet
 
-    @IBOutlet weak var collectionView: UICollectionView!
+    
+    @IBOutlet weak var dayPicer: DayPicerView!
     
     @IBOutlet weak var tableView: UITableView!
+    
+    var days = ["Пн","Вт","Ср","Чт","Пт","Сб","Вс"]
     
     let networkManager = NetworkManager.shared
     
@@ -37,6 +40,8 @@ class RaspisViewController: UIViewController {
                 self.tableView.reloadData()
             }
         }
+        
+        dayPicer.dataSourse = self
     }
     
 }
@@ -58,7 +63,35 @@ extension RaspisViewController: UITableViewDataSource{
     
     
 }
+//реализация Патерна Мост
+extension RaspisViewController: DayPicerViewDataSourse {
+    func DayPicerCount(_ dayPicer: DayPicerView) -> Int {
+        return days.count
+    }
+    
+    func DayPicerTitle(_ dayPicer: DayPicerView, IndexPath: IndexPath) -> String {
+        return days [IndexPath.row]
+    }
+    
+    
+}
 
 
 
-
+//MARK: - доп методы
+extension RaspisViewController {
+    
+    func getClasses(item: Group?) -> [Classes]{
+        var array: [Classes] = []
+        if let item = item {
+            let foo = item.weeks?.first?.days
+            foo?.forEach({ day in
+                day.classes?.forEach({ classes in
+                    array.append(classes)
+                })
+            })
+        }
+        
+        return array
+    }
+}

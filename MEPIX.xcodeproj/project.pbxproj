@@ -26,6 +26,7 @@
 		30B7766D240E6810007BA2F1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 30B7766C240E6810007BA2F1 /* GoogleService-Info.plist */; };
 		30BF3BB3240E729100A7B2C6 /* MEPIXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B19F81240DA3DB00BD1F97 /* MEPIXTests.swift */; };
 		30BF3BB4240E72A200A7B2C6 /* MEPIXUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B19F7C240DA3CA00BD1F97 /* MEPIXUITests.swift */; };
+		30EADFFA272CFFB300BD1F73 /* BridgeDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EADFF9272CFFB300BD1F73 /* BridgeDate.swift */; };
 		30FD0429260782DC00392AD3 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FD0428260782DB00392AD3 /* DashboardViewController.swift */; };
 		382869E4FDE7DFF84C9EFFA3 /* Pods_MEPIX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9569C5C004C910D8E1B37968 /* Pods_MEPIX.framework */; };
 		F20214FA2631CD1F00919125 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20214F92631CD1F00919125 /* NetworkManager.swift */; };
@@ -94,6 +95,7 @@
 		30B19F81240DA3DB00BD1F97 /* MEPIXTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MEPIXTests.swift; sourceTree = "<group>"; };
 		30B19F82240DA3DB00BD1F97 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30B7766C240E6810007BA2F1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		30EADFF9272CFFB300BD1F73 /* BridgeDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgeDate.swift; sourceTree = "<group>"; };
 		30FD0428260782DB00392AD3 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		9569C5C004C910D8E1B37968 /* Pods_MEPIX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MEPIX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2AE062F5EEDA6B61FB88F43 /* Pods-MEPIX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MEPIX.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MEPIX/Pods-MEPIX.debug.xcconfig"; sourceTree = "<group>"; };
@@ -167,6 +169,7 @@
 		30A034D523FFBBC4005C5AA9 /* MEPIX */ = {
 			isa = PBXGroup;
 			children = (
+				30EADFF8272CFF8D00BD1F73 /* Bridge */,
 				308CB496270E029E00254F1D /* Singleton */,
 				F2220C132624D30B009CCFEE /* Extensions */,
 				30CBBCE1257BC789008E568B /* Model */,
@@ -214,6 +217,14 @@
 				F2F1D6CE2639CC9C00C34E99 /* MapModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		30EADFF8272CFF8D00BD1F73 /* Bridge */ = {
+			isa = PBXGroup;
+			children = (
+				30EADFF9272CFFB300BD1F73 /* BridgeDate.swift */,
+			);
+			path = Bridge;
 			sourceTree = "<group>";
 		};
 		742E3E37E943D56A07F1BE88 /* Pods */ = {
@@ -477,6 +488,7 @@
 				308CB49527039B8400254F1D /* GroupManager.swift in Sources */,
 				3011D8452653E3300080FADC /* RasspisanieCell.swift in Sources */,
 				30AC31F2256BF18E00EF8475 /* GroupViewController.swift in Sources */,
+				30EADFFA272CFFB300BD1F73 /* BridgeDate.swift in Sources */,
 				F2BE03502627647200921318 /* TableViewCell+Extension.swift in Sources */,
 				F2BE034326275EF800921318 /* GroupModel.swift in Sources */,
 				3067ECB72559DAB80015583C /*  OnboardingController.swift in Sources */,
