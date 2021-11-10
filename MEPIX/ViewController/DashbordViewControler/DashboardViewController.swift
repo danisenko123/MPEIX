@@ -10,7 +10,6 @@ import UIKit
 
 class DashboardViewController: UIViewController {
 
-    var networkManager = NetworkManager.shared
     
     
     @IBOutlet weak var GroopLabel: UILabel!

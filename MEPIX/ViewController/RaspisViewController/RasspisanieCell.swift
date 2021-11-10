@@ -9,6 +9,7 @@
 import UIKit
 
 class RasspisanieCell: UICollectionViewCell{
+    
     @IBOutlet weak var tableView: UITableView!
     var fullScreenHandler: ((_ cell:RasspisanieCell,_ indexProduct:Int)-> Void)?
     let networkManager = NetworkManager.shared

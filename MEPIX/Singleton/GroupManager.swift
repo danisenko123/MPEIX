@@ -8,8 +8,12 @@
 
 import Foundation
 
+
 class GroupManager{
-     static let shared = GroupManager()
+   var  networkManager = NetworkManager.shared
     
+     
+    
+    static let shared = GroupManager()
     var group: String?
 }

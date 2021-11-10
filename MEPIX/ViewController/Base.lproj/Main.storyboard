@@ -186,71 +186,11 @@
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a8M-jM-LrS">
-                                                        <rect key="frame" x="8" y="301" width="396" height="141"/>
+                                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="6eY-bM-pLj">
+                                                        <rect key="frame" x="-3" y="260" width="417" height="382"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="9:20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t6S-tp-Hmt">
-                                                                <rect key="frame" x="10" y="38" width="31" height="19"/>
-                                                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
-                                                                <nil key="textColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="10:55" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R6I-4B-fZo">
-                                                                <rect key="frame" x="10" y="68" width="35" height="16.5"/>
-                                                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
-                                                                <nil key="textColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Инженерная и комп. графика" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dHQ-t5-tIP">
-                                                                <rect key="frame" x="96" y="29" width="249" height="21.5"/>
-                                                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="18"/>
-                                                                <nil key="textColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Б-407" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3mH-FH-vxD">
-                                                                <rect key="frame" x="96" y="58.5" width="36.5" height="16.5"/>
-                                                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
-                                                                <nil key="textColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Чахеев Е.Я." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fga-bU-9XH">
-                                                                <rect key="frame" x="94" y="85" width="90.5" height="16.5"/>
-                                                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
-                                                                <nil key="textColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="3 пара" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Fq-NQ-GVi">
-                                                                <rect key="frame" x="105" y="8" width="30.5" height="12"/>
-                                                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="10"/>
-                                                                <nil key="textColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="ПРАКТИКА" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="otl-4v-ij3">
-                                                                <rect key="frame" x="173.5" y="9" width="52" height="12"/>
-                                                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="10"/>
-                                                                <nil key="textColor"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kRT-RQ-rLq">
-                                                                <rect key="frame" x="352.5" y="66" width="24" height="24"/>
-                                                                <state key="normal" image="К "/>
-                                                            </button>
-                                                        </subviews>
-                                                        <color key="backgroundColor" systemColor="tertiarySystemFillColor"/>
-                                                        <constraints>
-                                                            <constraint firstItem="dHQ-t5-tIP" firstAttribute="leading" secondItem="t6S-tp-Hmt" secondAttribute="trailing" constant="55" id="IGL-RQ-i12"/>
-                                                            <constraint firstItem="3mH-FH-vxD" firstAttribute="leading" secondItem="R6I-4B-fZo" secondAttribute="trailing" constant="51" id="RvL-1D-OC2"/>
-                                                            <constraint firstItem="dHQ-t5-tIP" firstAttribute="top" secondItem="otl-4v-ij3" secondAttribute="bottom" constant="8" symbolic="YES" id="TDh-C1-zuA"/>
-                                                            <constraint firstItem="R6I-4B-fZo" firstAttribute="top" secondItem="t6S-tp-Hmt" secondAttribute="bottom" constant="11" id="WSi-oo-S4X"/>
-                                                            <constraint firstItem="kRT-RQ-rLq" firstAttribute="leading" secondItem="fga-bU-9XH" secondAttribute="trailing" constant="168" id="aou-5f-jEk"/>
-                                                            <constraint firstItem="otl-4v-ij3" firstAttribute="leading" secondItem="1Fq-NQ-GVi" secondAttribute="trailing" constant="38" id="bIe-zU-gMp"/>
-                                                            <constraint firstItem="3mH-FH-vxD" firstAttribute="top" secondItem="dHQ-t5-tIP" secondAttribute="bottom" constant="8" symbolic="YES" id="d73-al-LUV"/>
-                                                            <constraint firstItem="dHQ-t5-tIP" firstAttribute="top" secondItem="1Fq-NQ-GVi" secondAttribute="bottom" constant="9" id="dlb-wS-nHC"/>
-                                                            <constraint firstItem="fga-bU-9XH" firstAttribute="top" secondItem="3mH-FH-vxD" secondAttribute="bottom" constant="10" id="pdA-74-uiG"/>
-                                                            <constraint firstItem="kRT-RQ-rLq" firstAttribute="leading" secondItem="3mH-FH-vxD" secondAttribute="trailing" constant="220" id="xZQ-fF-0SG"/>
-                                                        </constraints>
-                                                    </view>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    </tableView>
                                                 </subviews>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
@@ -476,9 +416,7 @@
                             <constraint firstItem="iO2-xi-JTj" firstAttribute="trailing" secondItem="W8G-df-m6m" secondAttribute="trailing" id="pfJ-Cz-WFy"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="map-1" id="2H1-zf-NbY">
-                        <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="0.0"/>
-                    </tabBarItem>
+                    <tabBarItem key="tabBarItem" title="" image="map-1" id="2H1-zf-NbY"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="dayPicer" destination="5DA-dY-tHN" id="WNg-gz-yTW"/>
@@ -592,7 +530,6 @@
         <image name="map-1" width="24" height="24"/>
         <image name="menu" width="24" height="24"/>
         <image name="nav icon" width="40" height="40"/>
-        <image name="К " width="24" height="24"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
@@ -607,9 +544,6 @@
         </systemColor>
         <systemColor name="tertiarySystemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="tertiarySystemFillColor">
-            <color red="0.46274509803921571" green="0.46274509803921571" blue="0.50196078431372548" alpha="0.12" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
