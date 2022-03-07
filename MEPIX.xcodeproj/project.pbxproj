@@ -29,6 +29,8 @@
 		30EADFFA272CFFB300BD1F73 /* BridgeDate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EADFF9272CFFB300BD1F73 /* BridgeDate.swift */; };
 		30EAE00A273C494500BD1F73 /* DashbordCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EAE008273C494500BD1F73 /* DashbordCell.swift */; };
 		30EAE00B273C494500BD1F73 /* DashbordCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30EAE009273C494500BD1F73 /* DashbordCell.xib */; };
+		30EAE00E27418EE300BD1F73 /* DachCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EAE00C27418EE300BD1F73 /* DachCell.swift */; };
+		30EAE00F27418EE300BD1F73 /* DachCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30EAE00D27418EE300BD1F73 /* DachCell.xib */; };
 		30FD0429260782DC00392AD3 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FD0428260782DB00392AD3 /* DashboardViewController.swift */; };
 		382869E4FDE7DFF84C9EFFA3 /* Pods_MEPIX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9569C5C004C910D8E1B37968 /* Pods_MEPIX.framework */; };
 		F20214FA2631CD1F00919125 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20214F92631CD1F00919125 /* NetworkManager.swift */; };
@@ -100,6 +102,8 @@
 		30EADFF9272CFFB300BD1F73 /* BridgeDate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgeDate.swift; sourceTree = "<group>"; };
 		30EAE008273C494500BD1F73 /* DashbordCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashbordCell.swift; sourceTree = "<group>"; };
 		30EAE009273C494500BD1F73 /* DashbordCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashbordCell.xib; sourceTree = "<group>"; };
+		30EAE00C27418EE300BD1F73 /* DachCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DachCell.swift; sourceTree = "<group>"; };
+		30EAE00D27418EE300BD1F73 /* DachCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DachCell.xib; sourceTree = "<group>"; };
 		30FD0428260782DB00392AD3 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		9569C5C004C910D8E1B37968 /* Pods_MEPIX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MEPIX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2AE062F5EEDA6B61FB88F43 /* Pods-MEPIX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MEPIX.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MEPIX/Pods-MEPIX.debug.xcconfig"; sourceTree = "<group>"; };
@@ -237,6 +241,8 @@
 				30FD0428260782DB00392AD3 /* DashboardViewController.swift */,
 				30EAE008273C494500BD1F73 /* DashbordCell.swift */,
 				30EAE009273C494500BD1F73 /* DashbordCell.xib */,
+				30EAE00C27418EE300BD1F73 /* DachCell.swift */,
+				30EAE00D27418EE300BD1F73 /* DachCell.xib */,
 			);
 			path = DashbordViewControler;
 			sourceTree = "<group>";
@@ -422,6 +428,7 @@
 				30EAE00B273C494500BD1F73 /* DashbordCell.xib in Resources */,
 				30A034E323FFBBC5005C5AA9 /* LaunchScreen.storyboard in Resources */,
 				30A034E023FFBBC5005C5AA9 /* Assets.xcassets in Resources */,
+				30EAE00F27418EE300BD1F73 /* DachCell.xib in Resources */,
 				30A034DE23FFBBC5005C5AA9 /* Main.storyboard in Resources */,
 				3011D83F2653A3B10080FADC /* RaspisCell.xib in Resources */,
 				3011D8462653E3300080FADC /* RasspisanieCell.xib in Resources */,
@@ -499,6 +506,7 @@
 				308CB49127039A8000254F1D /* TabBarController.swift in Sources */,
 				30A034D923FFBBC5005C5AA9 /* SceneDelegate.swift in Sources */,
 				3011D83E2653A3B10080FADC /* RaspisCell.swift in Sources */,
+				30EAE00E27418EE300BD1F73 /* DachCell.swift in Sources */,
 				F204DA9D2639C129002B2778 /* MapViewController.swift in Sources */,
 				301E85D725949E4100C1D7E3 /* RaspisViewController.swift in Sources */,
 				308CB49527039B8400254F1D /* GroupManager.swift in Sources */,
